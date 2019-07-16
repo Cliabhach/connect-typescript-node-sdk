@@ -7,9 +7,9 @@
     "main": "dist/api.js",
     "types": "dist/api.d.ts",
     "scripts": {
-        "clean": "rm -Rf node_modules/ *.js",
-        "build": "tsc",
-        "test": "npm run build && node dist/client.js"
+        "clean": "rm -Rf node_modules/ *.js             # Delete local development files (without touching the binary outputs in 'dist')",
+        "build": "tsc                                   # TypeScript Compiler; Config is automatically read from tsconfig.json",
+        "test": "npm run build && node dist/client.js   # This presumes the existence of a 'client.js'. Should probably replace with something that runs Mocha tests"
     },
     "author": "OpenAPI-Generator Contributors",
     "license": "Apache-2.0",
