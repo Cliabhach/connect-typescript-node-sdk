@@ -14,11 +14,8 @@
     "author": "OpenAPI-Generator Contributors",
     "license": "Apache-2.0",
     "dependencies": {
-        "bluebird": "^3.5.0",
         "request": "^2.88.0",
-        "@types/bluebird": "*",
-        "@types/request": "*",
-        "rewire": "^3.0.2"
+        "@types/request": "*"
     },
     "devDependencies": {
         "typescript": "^3.5.2",
