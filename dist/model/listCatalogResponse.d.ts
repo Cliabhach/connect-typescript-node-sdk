@@ -1,6 +1,7 @@
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 export declare class ListCatalogResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'cursor'?: string;
     'objects'?: Array<CatalogObject>;
     static discriminator: string | undefined;

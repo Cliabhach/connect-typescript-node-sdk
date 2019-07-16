@@ -1,4 +1,4 @@
-export declare class ModelError {
+export declare class SquareError {
     'category': string;
     'code': string;
     'detail'?: string;

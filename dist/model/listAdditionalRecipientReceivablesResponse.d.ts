@@ -1,6 +1,7 @@
 import { AdditionalRecipientReceivable } from './additionalRecipientReceivable';
+import { SquareError } from './squareError';
 export declare class ListAdditionalRecipientReceivablesResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'receivables'?: Array<AdditionalRecipientReceivable>;
     'cursor'?: string;
     static discriminator: string | undefined;

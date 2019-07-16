@@ -1,6 +1,7 @@
+import { SquareError } from './squareError';
 import { Transaction } from './transaction';
 export declare class ChargeResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'transaction'?: Transaction;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

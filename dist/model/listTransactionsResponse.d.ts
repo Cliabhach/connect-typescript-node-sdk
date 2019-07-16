@@ -1,6 +1,7 @@
+import { SquareError } from './squareError';
 import { Transaction } from './transaction';
 export declare class ListTransactionsResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'transactions'?: Array<Transaction>;
     'cursor'?: string;
     static discriminator: string | undefined;

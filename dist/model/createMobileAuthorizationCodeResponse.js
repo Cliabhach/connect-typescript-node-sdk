@@ -20,7 +20,7 @@ CreateMobileAuthorizationCodeResponse.attributeTypeMap = [
     {
         "name": "error",
         "baseName": "error",
-        "type": "Error"
+        "type": "SquareError"
     }
 ];
 exports.CreateMobileAuthorizationCodeResponse = CreateMobileAuthorizationCodeResponse;

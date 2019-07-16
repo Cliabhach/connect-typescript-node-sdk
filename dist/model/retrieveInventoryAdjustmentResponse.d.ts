@@ -1,6 +1,7 @@
 import { InventoryAdjustment } from './inventoryAdjustment';
+import { SquareError } from './squareError';
 export declare class RetrieveInventoryAdjustmentResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'adjustment'?: InventoryAdjustment;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

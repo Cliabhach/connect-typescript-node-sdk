@@ -1,5 +1,6 @@
+import { SquareError } from './squareError';
 export declare class UpdateItemTaxesResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'updatedAt'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

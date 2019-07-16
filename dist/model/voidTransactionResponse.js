@@ -10,7 +10,7 @@ VoidTransactionResponse.attributeTypeMap = [
     {
         "name": "errors",
         "baseName": "errors",
-        "type": "Array<Error>"
+        "type": "Array<SquareError>"
     }
 ];
 exports.VoidTransactionResponse = VoidTransactionResponse;

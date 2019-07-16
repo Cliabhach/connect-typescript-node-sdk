@@ -1,6 +1,7 @@
 import { Refund } from './refund';
+import { SquareError } from './squareError';
 export declare class CreateRefundResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'refund'?: Refund;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

@@ -1,8 +1,9 @@
 import { BreakType } from './breakType';
+import { SquareError } from './squareError';
 export declare class ListBreakTypesResponse {
     'breakTypes'?: Array<BreakType>;
     'cursor'?: string;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

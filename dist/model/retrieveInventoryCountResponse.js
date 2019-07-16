@@ -10,7 +10,7 @@ RetrieveInventoryCountResponse.attributeTypeMap = [
     {
         "name": "errors",
         "baseName": "errors",
-        "type": "Array<Error>"
+        "type": "Array<SquareError>"
     },
     {
         "name": "counts",

@@ -1,7 +1,8 @@
 import { CatalogIdMapping } from './catalogIdMapping';
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 export declare class BatchUpsertCatalogObjectsResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'objects'?: Array<CatalogObject>;
     'updatedAt'?: string;
     'idMappings'?: Array<CatalogIdMapping>;

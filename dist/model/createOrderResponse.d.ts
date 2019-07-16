@@ -1,7 +1,8 @@
 import { Order } from './order';
+import { SquareError } from './squareError';
 export declare class CreateOrderResponse {
     'order'?: Order;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

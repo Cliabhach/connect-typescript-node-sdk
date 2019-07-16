@@ -1,6 +1,7 @@
 import { InventoryPhysicalCount } from './inventoryPhysicalCount';
+import { SquareError } from './squareError';
 export declare class RetrieveInventoryPhysicalCountResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'count'?: InventoryPhysicalCount;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

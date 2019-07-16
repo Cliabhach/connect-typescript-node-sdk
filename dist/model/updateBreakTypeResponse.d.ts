@@ -1,7 +1,8 @@
 import { BreakType } from './breakType';
+import { SquareError } from './squareError';
 export declare class UpdateBreakTypeResponse {
     'breakType'?: BreakType;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

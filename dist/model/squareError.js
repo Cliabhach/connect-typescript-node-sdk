@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class ModelError {
+class SquareError {
     static getAttributeTypeMap() {
-        return ModelError.attributeTypeMap;
+        return SquareError.attributeTypeMap;
     }
 }
-ModelError.discriminator = undefined;
-ModelError.attributeTypeMap = [
+SquareError.discriminator = undefined;
+SquareError.attributeTypeMap = [
     {
         "name": "category",
         "baseName": "category",
@@ -28,5 +28,5 @@ ModelError.attributeTypeMap = [
         "type": "string"
     }
 ];
-exports.ModelError = ModelError;
-//# sourceMappingURL=modelError.js.map
+exports.SquareError = SquareError;
+//# sourceMappingURL=squareError.js.map

@@ -1,7 +1,8 @@
 import { Shift } from './shift';
+import { SquareError } from './squareError';
 export declare class UpdateShiftResponse {
     'shift'?: Shift;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

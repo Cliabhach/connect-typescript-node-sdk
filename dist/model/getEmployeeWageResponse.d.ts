@@ -1,7 +1,8 @@
 import { EmployeeWage } from './employeeWage';
+import { SquareError } from './squareError';
 export declare class GetEmployeeWageResponse {
     'employeeWage'?: EmployeeWage;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

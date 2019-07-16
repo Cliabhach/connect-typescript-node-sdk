@@ -1,7 +1,8 @@
 import { CatalogIdMapping } from './catalogIdMapping';
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 export declare class UpsertCatalogObjectResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'catalogObject'?: CatalogObject;
     'idMappings'?: Array<CatalogIdMapping>;
     static discriminator: string | undefined;

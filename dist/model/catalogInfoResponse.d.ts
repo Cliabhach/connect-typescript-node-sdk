@@ -1,7 +1,8 @@
 import { CatalogInfoResponseLimits } from './catalogInfoResponseLimits';
+import { SquareError } from './squareError';
 import { StandardUnitDescriptionGroup } from './standardUnitDescriptionGroup';
 export declare class CatalogInfoResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'limits'?: CatalogInfoResponseLimits;
     'standardUnitDescriptionGroup'?: StandardUnitDescriptionGroup;
     static discriminator: string | undefined;

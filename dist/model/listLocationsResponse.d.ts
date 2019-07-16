@@ -1,6 +1,7 @@
 import { Location } from './location';
+import { SquareError } from './squareError';
 export declare class ListLocationsResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'locations'?: Array<Location>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

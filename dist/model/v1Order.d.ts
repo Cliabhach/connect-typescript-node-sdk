@@ -1,9 +1,10 @@
 import { Address } from './address';
+import { SquareError } from './squareError';
 import { V1Money } from './v1Money';
 import { V1OrderHistoryEntry } from './v1OrderHistoryEntry';
 import { V1Tender } from './v1Tender';
 export declare class V1Order {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'id'?: string;
     'buyerEmail'?: string;
     'recipientName'?: string;

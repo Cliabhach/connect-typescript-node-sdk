@@ -1,5 +1,6 @@
+import { SquareError } from './squareError';
 export declare class DeleteCatalogObjectResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'deletedObjectIds'?: Array<string>;
     'deletedAt'?: string;
     static discriminator: string | undefined;

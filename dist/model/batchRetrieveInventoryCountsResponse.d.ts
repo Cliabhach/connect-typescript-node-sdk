@@ -1,6 +1,7 @@
 import { InventoryCount } from './inventoryCount';
+import { SquareError } from './squareError';
 export declare class BatchRetrieveInventoryCountsResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'counts'?: Array<InventoryCount>;
     'cursor'?: string;
     static discriminator: string | undefined;

@@ -1,7 +1,8 @@
 import { Checkout } from './checkout';
+import { SquareError } from './squareError';
 export declare class CreateCheckoutResponse {
     'checkout'?: Checkout;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -1,6 +1,7 @@
+import { SquareError } from './squareError';
 import { V1Money } from './v1Money';
 export declare class V1PaymentTax {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'name'?: string;
     'appliedMoney'?: V1Money;
     'rate'?: string;

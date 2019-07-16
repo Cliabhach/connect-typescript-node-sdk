@@ -1,7 +1,8 @@
+import { SquareError } from './squareError';
 import { WorkweekConfig } from './workweekConfig';
 export declare class UpdateWorkweekConfigResponse {
     'workweekConfig'?: WorkweekConfig;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

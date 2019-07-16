@@ -15,7 +15,7 @@ UpdateWorkweekConfigResponse.attributeTypeMap = [
     {
         "name": "errors",
         "baseName": "errors",
-        "type": "Array<Error>"
+        "type": "Array<SquareError>"
     }
 ];
 exports.UpdateWorkweekConfigResponse = UpdateWorkweekConfigResponse;

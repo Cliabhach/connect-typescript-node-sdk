@@ -15,7 +15,7 @@ CreateCheckoutResponse.attributeTypeMap = [
     {
         "name": "errors",
         "baseName": "errors",
-        "type": "Array<Error>"
+        "type": "Array<SquareError>"
     }
 ];
 exports.CreateCheckoutResponse = CreateCheckoutResponse;

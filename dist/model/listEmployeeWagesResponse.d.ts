@@ -1,8 +1,9 @@
 import { EmployeeWage } from './employeeWage';
+import { SquareError } from './squareError';
 export declare class ListEmployeeWagesResponse {
     'employeeWages'?: Array<EmployeeWage>;
     'cursor'?: string;
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{
         name: string;

@@ -1,6 +1,7 @@
 import { Customer } from './customer';
+import { SquareError } from './squareError';
 export declare class UpdateCustomerResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'customer'?: Customer;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

@@ -155,7 +155,6 @@ __export(require("./measurementUnitGeneric"));
 __export(require("./measurementUnitLength"));
 __export(require("./measurementUnitVolume"));
 __export(require("./measurementUnitWeight"));
-__export(require("./modelError"));
 __export(require("./money"));
 __export(require("./obtainTokenRequest"));
 __export(require("./obtainTokenResponse"));
@@ -238,6 +237,7 @@ __export(require("./shiftWorkday"));
 __export(require("./shiftWorkdayMatcher"));
 __export(require("./sortOrder"));
 __export(require("./sourceApplication"));
+__export(require("./squareError"));
 __export(require("./standardUnitDescription"));
 __export(require("./standardUnitDescriptionGroup"));
 __export(require("./taxCalculationPhase"));
@@ -548,7 +548,6 @@ const measurementUnitGeneric_1 = require("./measurementUnitGeneric");
 const measurementUnitLength_1 = require("./measurementUnitLength");
 const measurementUnitVolume_1 = require("./measurementUnitVolume");
 const measurementUnitWeight_1 = require("./measurementUnitWeight");
-const modelError_1 = require("./modelError");
 const money_1 = require("./money");
 const obtainTokenRequest_1 = require("./obtainTokenRequest");
 const obtainTokenResponse_1 = require("./obtainTokenResponse");
@@ -631,6 +630,7 @@ const shiftWorkday_1 = require("./shiftWorkday");
 const shiftWorkdayMatcher_1 = require("./shiftWorkdayMatcher");
 const sortOrder_1 = require("./sortOrder");
 const sourceApplication_1 = require("./sourceApplication");
+const squareError_1 = require("./squareError");
 const standardUnitDescription_1 = require("./standardUnitDescription");
 const standardUnitDescriptionGroup_1 = require("./standardUnitDescriptionGroup");
 const taxCalculationPhase_1 = require("./taxCalculationPhase");
@@ -1019,7 +1019,6 @@ let typeMap = {
     "Location": location_1.Location,
     "MeasurementUnit": measurementUnit_1.MeasurementUnit,
     "MeasurementUnitCustom": measurementUnitCustom_1.MeasurementUnitCustom,
-    "ModelError": modelError_1.ModelError,
     "Money": money_1.Money,
     "ObtainTokenRequest": obtainTokenRequest_1.ObtainTokenRequest,
     "ObtainTokenResponse": obtainTokenResponse_1.ObtainTokenResponse,
@@ -1084,6 +1083,7 @@ let typeMap = {
     "ShiftWage": shiftWage_1.ShiftWage,
     "ShiftWorkday": shiftWorkday_1.ShiftWorkday,
     "SourceApplication": sourceApplication_1.SourceApplication,
+    "SquareError": squareError_1.SquareError,
     "StandardUnitDescription": standardUnitDescription_1.StandardUnitDescription,
     "StandardUnitDescriptionGroup": standardUnitDescriptionGroup_1.StandardUnitDescriptionGroup,
     "Tender": tender_1.Tender,

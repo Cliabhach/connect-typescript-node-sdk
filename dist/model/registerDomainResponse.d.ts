@@ -1,5 +1,6 @@
+import { SquareError } from './squareError';
 export declare class RegisterDomainResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'status'?: string;
     static discriminator: string | undefined;
     static attributeTypeMap: Array<{

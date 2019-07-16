@@ -1,6 +1,7 @@
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 export declare class BatchRetrieveCatalogObjectsResponse {
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'objects'?: Array<CatalogObject>;
     'relatedObjects'?: Array<CatalogObject>;
     static discriminator: string | undefined;
