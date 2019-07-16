@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 import { Transaction } from './transaction';
 
 /**
@@ -19,7 +20,7 @@ export class RetrieveTransactionResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'transaction'?: Transaction;
 
     static discriminator: string | undefined = undefined;
@@ -28,7 +29,7 @@ export class RetrieveTransactionResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "transaction",

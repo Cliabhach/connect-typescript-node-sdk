@@ -11,6 +11,7 @@
  */
 
 import { Employee } from './employee';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the ListEmployees endpoint.  One of `errors` or `employees` is present in a given response (never both).
@@ -27,7 +28,7 @@ export class ListEmployeesResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -45,7 +46,7 @@ export class ListEmployeesResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {

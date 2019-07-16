@@ -11,16 +11,17 @@
  */
 
 import { Shift } from './shift';
+import { SquareError } from './squareError';
 
 /**
-* The response to a request to update a `Shift`. Contains the updated `Shift` object. May contain a set of `Error` objects if the request resulted in errors.
+* The response to a request to update a `Shift`. Contains the updated `Shift` object. May contain a set of `SquareError` objects if the request resulted in errors.
 */
 export class UpdateShiftResponse {
     'shift'?: Shift;
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -33,7 +34,7 @@ export class UpdateShiftResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {

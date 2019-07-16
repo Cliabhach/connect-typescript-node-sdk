@@ -12,15 +12,16 @@
 
 import { CatalogIdMapping } from './catalogIdMapping';
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 
 /**
 * 
 */
 export class UpsertCatalogObjectResponse {
     /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of [SquareError](#type-squareerror)s encountered.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'catalogObject'?: CatalogObject;
     /**
     * The mapping between client and server IDs for this Upsert.
@@ -33,7 +34,7 @@ export class UpsertCatalogObjectResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "catalogObject",

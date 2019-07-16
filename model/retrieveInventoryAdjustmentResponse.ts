@@ -11,6 +11,7 @@
  */
 
 import { InventoryAdjustment } from './inventoryAdjustment';
+import { SquareError } from './squareError';
 
 /**
 * 
@@ -19,7 +20,7 @@ export class RetrieveInventoryAdjustmentResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'adjustment'?: InventoryAdjustment;
 
     static discriminator: string | undefined = undefined;
@@ -28,7 +29,7 @@ export class RetrieveInventoryAdjustmentResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "adjustment",

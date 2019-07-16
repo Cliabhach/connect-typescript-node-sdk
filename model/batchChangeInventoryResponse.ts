@@ -11,6 +11,7 @@
  */
 
 import { InventoryCount } from './inventoryCount';
+import { SquareError } from './squareError';
 
 /**
 * 
@@ -19,7 +20,7 @@ export class BatchChangeInventoryResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The current counts for all objects referenced in the request.
     */
@@ -31,7 +32,7 @@ export class BatchChangeInventoryResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "counts",

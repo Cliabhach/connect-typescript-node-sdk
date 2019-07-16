@@ -11,6 +11,7 @@
  */
 
 import { Order } from './order';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the BatchRetrieveOrders endpoint.
@@ -23,7 +24,7 @@ export class BatchRetrieveOrdersResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * List of transaction ids within the requested set of ids that encountered transformation issues when being converted to an Order.
     */
@@ -40,7 +41,7 @@ export class BatchRetrieveOrdersResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "unconvertibleTransactionIds",

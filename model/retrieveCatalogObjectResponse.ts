@@ -11,15 +11,16 @@
  */
 
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 
 /**
 * 
 */
 export class RetrieveCatalogObjectResponse {
     /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of [SquareError](#type-squareerror)s encountered.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'object'?: CatalogObject;
     /**
     * A list of [CatalogObject](#type-catalogobject)s referenced by the object in the `object` field.
@@ -32,7 +33,7 @@ export class RetrieveCatalogObjectResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "object",

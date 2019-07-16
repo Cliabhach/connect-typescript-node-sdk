@@ -14,7 +14,7 @@
 /**
 * Represents an error encountered during a request to the Connect API.
 */
-export class ModelError {
+export class SquareError {
     /**
     * The error\'s high-level category. See [ErrorCategory](#type-errorcategory) for possible values
     */
@@ -57,7 +57,7 @@ export class ModelError {
         }    ];
 
     static getAttributeTypeMap() {
-        return ModelError.attributeTypeMap;
+        return SquareError.attributeTypeMap;
     }
 }
 

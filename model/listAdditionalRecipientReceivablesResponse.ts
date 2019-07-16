@@ -11,6 +11,7 @@
  */
 
 import { AdditionalRecipientReceivable } from './additionalRecipientReceivable';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the ListAdditionalRecipientReceivables endpoint.  One of `errors` or `additional_recipient_receivables` is present in a given response (never both).
@@ -19,7 +20,7 @@ export class ListAdditionalRecipientReceivablesResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * An array of AdditionalRecipientReceivables that match your query.
     */
@@ -35,7 +36,7 @@ export class ListAdditionalRecipientReceivablesResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "receivables",

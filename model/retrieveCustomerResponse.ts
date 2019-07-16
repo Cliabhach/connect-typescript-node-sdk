@@ -11,6 +11,7 @@
  */
 
 import { Customer } from './customer';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the RetrieveCustomer endpoint.  One of `errors` or `customer` is present in a given response (never both).
@@ -19,7 +20,7 @@ export class RetrieveCustomerResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'customer'?: Customer;
 
     static discriminator: string | undefined = undefined;
@@ -28,7 +29,7 @@ export class RetrieveCustomerResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "customer",

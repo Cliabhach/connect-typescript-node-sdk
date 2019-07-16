@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 import { Transaction } from './transaction';
 
 /**
@@ -19,7 +20,7 @@ export class ListTransactionsResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * An array of transactions that match your query.
     */
@@ -35,7 +36,7 @@ export class ListTransactionsResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "transactions",

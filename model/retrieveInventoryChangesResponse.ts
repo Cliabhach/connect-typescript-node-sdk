@@ -11,6 +11,7 @@
  */
 
 import { InventoryChange } from './inventoryChange';
+import { SquareError } from './squareError';
 
 /**
 * 
@@ -19,7 +20,7 @@ export class RetrieveInventoryChangesResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The set of inventory changes for the requested object and locations.
     */
@@ -35,7 +36,7 @@ export class RetrieveInventoryChangesResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "changes",

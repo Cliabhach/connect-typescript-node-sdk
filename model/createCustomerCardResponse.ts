@@ -11,6 +11,7 @@
  */
 
 import { Card } from './card';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the CreateCustomerCard endpoint.  One of `errors` or `card` is present in a given response (never both).
@@ -19,7 +20,7 @@ export class CreateCustomerCardResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'card'?: Card;
 
     static discriminator: string | undefined = undefined;
@@ -28,7 +29,7 @@ export class CreateCustomerCardResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "card",

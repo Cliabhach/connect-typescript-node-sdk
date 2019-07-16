@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 import { V1Money } from './v1Money';
 
 /**
@@ -19,7 +20,7 @@ export class V1PaymentTax {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The merchant-defined name of the tax.
     */
@@ -44,7 +45,7 @@ export class V1PaymentTax {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "name",

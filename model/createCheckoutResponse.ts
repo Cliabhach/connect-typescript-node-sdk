@@ -11,6 +11,7 @@
  */
 
 import { Checkout } from './checkout';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the CreateCheckout endpoint.
@@ -20,7 +21,7 @@ export class CreateCheckoutResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -33,7 +34,7 @@ export class CreateCheckoutResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {
