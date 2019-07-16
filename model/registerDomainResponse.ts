@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the RegisterDomain endpoint.  Either `errors` or `status` will be present in a given response (never both).
@@ -18,7 +19,7 @@ export class RegisterDomainResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * Status of the domain registration. See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values
     */
@@ -30,7 +31,7 @@ export class RegisterDomainResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "status",

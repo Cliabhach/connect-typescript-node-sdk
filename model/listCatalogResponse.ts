@@ -11,15 +11,16 @@
  */
 
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 
 /**
 * 
 */
 export class ListCatalogResponse {
     /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of [SquareError](#type-squareerror)s encountered.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](/basics/api101/pagination) for more information.
     */
@@ -35,7 +36,7 @@ export class ListCatalogResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "cursor",

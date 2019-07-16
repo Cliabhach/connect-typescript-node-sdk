@@ -11,9 +11,10 @@
  */
 
 import { BreakType } from './breakType';
+import { SquareError } from './squareError';
 
 /**
-* The response to a request for a set of `BreakTypes`. Contains the requested `BreakType` objects. May contain a set of `Error` objects if the request resulted in errors.
+* The response to a request for a set of `BreakTypes`. Contains the requested `BreakType` objects. May contain a set of `SquareError` objects if the request resulted in errors.
 */
 export class ListBreakTypesResponse {
     /**
@@ -27,7 +28,7 @@ export class ListBreakTypesResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -45,7 +46,7 @@ export class ListBreakTypesResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {

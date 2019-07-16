@@ -10,17 +10,18 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 import { WorkweekConfig } from './workweekConfig';
 
 /**
-* The response to a request to update a `WorkweekConfig` object. Contains the updated `WorkweekConfig` object. May contain a set of `Error` objects if the request resulted in errors.
+* The response to a request to update a `WorkweekConfig` object. Contains the updated `WorkweekConfig` object. May contain a set of `SquareError` objects if the request resulted in errors.
 */
 export class UpdateWorkweekConfigResponse {
     'workweekConfig'?: WorkweekConfig;
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -33,7 +34,7 @@ export class UpdateWorkweekConfigResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {

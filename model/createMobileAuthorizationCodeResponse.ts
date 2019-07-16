@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the CreateMobileAuthorizationCode endpoint.
@@ -23,7 +24,7 @@ export class CreateMobileAuthorizationCodeResponse {
     * The timestamp when `authorization_code` expires in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, e.g., \"2016-09-04T23:59:33.123Z\".
     */
     'expiresAt'?: string;
-    'error'?: Error;
+    'error'?: SquareError;
 
     static discriminator: string | undefined = undefined;
 
@@ -41,7 +42,7 @@ export class CreateMobileAuthorizationCodeResponse {
         {
             "name": "error",
             "baseName": "error",
-            "type": "Error"
+            "type": "SquareError"
         }    ];
 
     static getAttributeTypeMap() {

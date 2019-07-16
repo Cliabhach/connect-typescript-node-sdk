@@ -10,10 +10,11 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 import { WorkweekConfig } from './workweekConfig';
 
 /**
-* The response to a request for a set of `WorkweekConfig` objects. Contains the requested `WorkweekConfig` objects. May contain a set of `Error` objects if the request resulted in errors.
+* The response to a request for a set of `WorkweekConfig` objects. Contains the requested `WorkweekConfig` objects. May contain a set of `SquareError` objects if the request resulted in errors.
 */
 export class ListWorkweekConfigsResponse {
     /**
@@ -27,7 +28,7 @@ export class ListWorkweekConfigsResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -45,7 +46,7 @@ export class ListWorkweekConfigsResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {

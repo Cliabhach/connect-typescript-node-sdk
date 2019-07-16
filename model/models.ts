@@ -150,7 +150,6 @@ export * from './measurementUnitGeneric';
 export * from './measurementUnitLength';
 export * from './measurementUnitVolume';
 export * from './measurementUnitWeight';
-export * from './modelError';
 export * from './money';
 export * from './obtainTokenRequest';
 export * from './obtainTokenResponse';
@@ -233,6 +232,7 @@ export * from './shiftWorkday';
 export * from './shiftWorkdayMatcher';
 export * from './sortOrder';
 export * from './sourceApplication';
+export * from './squareError';
 export * from './standardUnitDescription';
 export * from './standardUnitDescriptionGroup';
 export * from './taxCalculationPhase';
@@ -546,7 +546,6 @@ import { MeasurementUnitGeneric } from './measurementUnitGeneric';
 import { MeasurementUnitLength } from './measurementUnitLength';
 import { MeasurementUnitVolume } from './measurementUnitVolume';
 import { MeasurementUnitWeight } from './measurementUnitWeight';
-import { ModelError } from './modelError';
 import { Money } from './money';
 import { ObtainTokenRequest } from './obtainTokenRequest';
 import { ObtainTokenResponse } from './obtainTokenResponse';
@@ -629,6 +628,7 @@ import { ShiftWorkday } from './shiftWorkday';
 import { ShiftWorkdayMatcher } from './shiftWorkdayMatcher';
 import { SortOrder } from './sortOrder';
 import { SourceApplication } from './sourceApplication';
+import { SquareError } from './squareError';
 import { StandardUnitDescription } from './standardUnitDescription';
 import { StandardUnitDescriptionGroup } from './standardUnitDescriptionGroup';
 import { TaxCalculationPhase } from './taxCalculationPhase';
@@ -1021,7 +1021,6 @@ let typeMap: {[index: string]: any} = {
     "Location": Location,
     "MeasurementUnit": MeasurementUnit,
     "MeasurementUnitCustom": MeasurementUnitCustom,
-    "ModelError": ModelError,
     "Money": Money,
     "ObtainTokenRequest": ObtainTokenRequest,
     "ObtainTokenResponse": ObtainTokenResponse,
@@ -1086,6 +1085,7 @@ let typeMap: {[index: string]: any} = {
     "ShiftWage": ShiftWage,
     "ShiftWorkday": ShiftWorkday,
     "SourceApplication": SourceApplication,
+    "SquareError": SquareError,
     "StandardUnitDescription": StandardUnitDescription,
     "StandardUnitDescriptionGroup": StandardUnitDescriptionGroup,
     "Tender": Tender,

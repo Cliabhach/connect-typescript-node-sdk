@@ -11,6 +11,7 @@
  */
 
 import { Location } from './location';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the ListLocations endpoint.  One of `errors` or `locations` is present in a given response (never both).
@@ -19,7 +20,7 @@ export class ListLocationsResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The business\'s locations.
     */
@@ -31,7 +32,7 @@ export class ListLocationsResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "locations",

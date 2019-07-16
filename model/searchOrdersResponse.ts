@@ -12,6 +12,7 @@
 
 import { Order } from './order';
 import { OrderEntry } from './orderEntry';
+import { SquareError } from './squareError';
 
 /**
 * Only one of `order_entries` or `orders` fields will be set, depending on whether `return_entries` was set on the [SearchOrdersRequest](#type-searchorderrequest).
@@ -32,7 +33,7 @@ export class SearchOrdersResponse {
     /**
     * [Errors](#type-error) encountered during the search.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * List of transaction IDs identifying transactions that could not be converted to an `Order`. Empty if `return_entries` is true, however, attempts to retrieve those orders may encounter subsequent `unconvertible_transcation_ids` Note that this field will not be present after SearchOrders moves from BETA to GA.
     */
@@ -59,7 +60,7 @@ export class SearchOrdersResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "unconvertibleTransactionIds",

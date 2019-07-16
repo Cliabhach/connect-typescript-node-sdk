@@ -11,6 +11,7 @@
  */
 
 import { Customer } from './customer';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the SearchCustomers endpoint.  One of `errors` or `customers` is present in a given response (never both).
@@ -19,7 +20,7 @@ export class SearchCustomersResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * An array of `Customer` objects that match a query.
     */
@@ -35,7 +36,7 @@ export class SearchCustomersResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "customers",

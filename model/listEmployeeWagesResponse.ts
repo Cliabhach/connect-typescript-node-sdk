@@ -11,6 +11,7 @@
  */
 
 import { EmployeeWage } from './employeeWage';
+import { SquareError } from './squareError';
 
 /**
 * The response to a request for a set of `EmployeeWage` objects. Contains  a set of `EmployeeWage`.
@@ -27,7 +28,7 @@ export class ListEmployeeWagesResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -45,7 +46,7 @@ export class ListEmployeeWagesResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {

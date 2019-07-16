@@ -11,6 +11,7 @@
  */
 
 import { CatalogInfoResponseLimits } from './catalogInfoResponseLimits';
+import { SquareError } from './squareError';
 import { StandardUnitDescriptionGroup } from './standardUnitDescriptionGroup';
 
 /**
@@ -18,9 +19,9 @@ import { StandardUnitDescriptionGroup } from './standardUnitDescriptionGroup';
 */
 export class CatalogInfoResponse {
     /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of [SquareError](#type-squareerror)s encountered.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'limits'?: CatalogInfoResponseLimits;
     'standardUnitDescriptionGroup'?: StandardUnitDescriptionGroup;
 
@@ -30,7 +31,7 @@ export class CatalogInfoResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "limits",

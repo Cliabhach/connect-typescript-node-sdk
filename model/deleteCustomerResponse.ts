@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the DeleteCustomer endpoint.
@@ -18,7 +19,7 @@ export class DeleteCustomerResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
 
     static discriminator: string | undefined = undefined;
 
@@ -26,7 +27,7 @@ export class DeleteCustomerResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         }    ];
 
     static getAttributeTypeMap() {

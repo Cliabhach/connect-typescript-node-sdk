@@ -12,15 +12,16 @@
 
 import { CatalogIdMapping } from './catalogIdMapping';
 import { CatalogObject } from './catalogObject';
+import { SquareError } from './squareError';
 
 /**
 * 
 */
 export class BatchUpsertCatalogObjectsResponse {
     /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of [SquareError](#type-squareerror)s encountered.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The created [CatalogObject](#type-catalogobject)s
     */
@@ -40,7 +41,7 @@ export class BatchUpsertCatalogObjectsResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "objects",

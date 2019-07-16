@@ -11,6 +11,7 @@
  */
 
 import { Refund } from './refund';
+import { SquareError } from './squareError';
 
 /**
 * Defines the fields that are included in the response body of a request to the ListRefunds endpoint.  One of `errors` or `refunds` is present in a given response (never both).
@@ -19,7 +20,7 @@ export class ListRefundsResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * An array of refunds that match your query.
     */
@@ -35,7 +36,7 @@ export class ListRefundsResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "refunds",

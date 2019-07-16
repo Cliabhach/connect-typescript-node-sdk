@@ -10,15 +10,16 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 
 /**
 * 
 */
 export class BatchDeleteCatalogObjectsResponse {
     /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of [SquareError](#type-squareerror)s encountered.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The IDs of all [CatalogObject](#type-catalogobject)s deleted by this request.
     */
@@ -34,7 +35,7 @@ export class BatchDeleteCatalogObjectsResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "deletedObjectIds",

@@ -10,15 +10,16 @@
  * Do not edit the class manually.
  */
 
+import { SquareError } from './squareError';
 
 /**
 * 
 */
 export class DeleteCatalogObjectResponse {
     /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of [SquareError](#type-squareerror)s encountered.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     /**
     * The IDs of all [CatalogObject](#type-catalogobject)s deleted by this request. Multiple IDs may be returned when associated objects are also deleted, for example a [CatalogItemVariation](#type-catalogitemvariation) will be deleted (and its ID included in this field) when its parent [CatalogItem](#type-catalogitem) is deleted.
     */
@@ -34,7 +35,7 @@ export class DeleteCatalogObjectResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "deletedObjectIds",

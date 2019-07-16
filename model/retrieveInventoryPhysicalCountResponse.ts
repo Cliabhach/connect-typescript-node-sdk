@@ -11,6 +11,7 @@
  */
 
 import { InventoryPhysicalCount } from './inventoryPhysicalCount';
+import { SquareError } from './squareError';
 
 /**
 * 
@@ -19,7 +20,7 @@ export class RetrieveInventoryPhysicalCountResponse {
     /**
     * Any errors that occurred during the request.
     */
-    'errors'?: Array<Error>;
+    'errors'?: Array<SquareError>;
     'count'?: InventoryPhysicalCount;
 
     static discriminator: string | undefined = undefined;
@@ -28,7 +29,7 @@ export class RetrieveInventoryPhysicalCountResponse {
         {
             "name": "errors",
             "baseName": "errors",
-            "type": "Array<Error>"
+            "type": "Array<SquareError>"
         },
         {
             "name": "count",
