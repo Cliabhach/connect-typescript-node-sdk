@@ -1,0 +1,1 @@
+{"version":3,"file":"v1ListItemsResponse.js","sourceRoot":"","sources":["../../model/v1ListItemsResponse.ts"],"names":[],"mappings":";;AAiBA,MAAa,mBAAmB;IAe5B,MAAM,CAAC,mBAAmB;QACtB,OAAO,mBAAmB,CAAC,gBAAgB,CAAC;IAChD,CAAC;;AAXM,iCAAa,GAAuB,SAAS,CAAC;AAE9C,oCAAgB,GAA0D;IAC7E;QACI,MAAM,EAAE,OAAO;QACf,UAAU,EAAE,OAAO;QACnB,MAAM,EAAE,eAAe;KAC1B;CAAK,CAAC;AAbf,kDAkBC"}

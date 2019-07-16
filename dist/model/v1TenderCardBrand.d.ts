@@ -1,0 +1,11 @@
+export declare enum V1TenderCardBrand {
+    OTHERBRAND,
+    VISA,
+    MASTERCARD,
+    AMERICANEXPRESS,
+    DISCOVER,
+    DISCOVERDINERS,
+    JCB,
+    CHINAUNIONPAY,
+    SQUAREGIFTCARD
+}

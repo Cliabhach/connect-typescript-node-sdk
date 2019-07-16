@@ -1,0 +1,15 @@
+import { BreakType } from './breakType';
+export declare class UpdateBreakTypeRequest {
+    'breakType'?: BreakType;
+    static discriminator: string | undefined;
+    static attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+    }>;
+    static getAttributeTypeMap(): {
+        name: string;
+        baseName: string;
+        type: string;
+    }[];
+}

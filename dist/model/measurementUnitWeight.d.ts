@@ -1,0 +1,8 @@
+export declare enum MeasurementUnitWeight {
+    IMPERIALWEIGHTOUNCE,
+    IMPERIALPOUND,
+    IMPERIALSTONE,
+    METRICMILLIGRAM,
+    METRICGRAM,
+    METRICKILOGRAM
+}

@@ -1,0 +1,20 @@
+import { Money } from './money';
+export declare class ItemVariationLocationOverrides {
+    'locationId'?: string;
+    'priceMoney'?: Money;
+    'pricingType'?: string;
+    'trackInventory'?: boolean;
+    'inventoryAlertType'?: string;
+    'inventoryAlertThreshold'?: number;
+    static discriminator: string | undefined;
+    static attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+    }>;
+    static getAttributeTypeMap(): {
+        name: string;
+        baseName: string;
+        type: string;
+    }[];
+}

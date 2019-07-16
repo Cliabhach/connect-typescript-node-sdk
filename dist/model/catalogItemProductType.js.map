@@ -1,0 +1,1 @@
+{"version":3,"file":"catalogItemProductType.js","sourceRoot":"","sources":["../../model/catalogItemProductType.ts"],"names":[],"mappings":";;AAgBA,IAAY,sBAMX;AAND,WAAY,sBAAsB;IAC9B,2DAAgB,SAAS,aAAA,CAAA;IACzB,4DAAiB,WAAW,cAAA,CAAA;IAC5B,uEAA4B,sBAAsB,yBAAA,CAAA;IAClD,8DAAmB,aAAa,gBAAA,CAAA;IAChC,kEAAuB,iBAAiB,oBAAA,CAAA;AAC5C,CAAC,EANW,sBAAsB,GAAtB,8BAAsB,KAAtB,8BAAsB,QAMjC"}

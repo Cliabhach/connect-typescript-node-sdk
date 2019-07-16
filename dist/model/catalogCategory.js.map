@@ -1,0 +1,1 @@
+{"version":3,"file":"catalogCategory.js","sourceRoot":"","sources":["../../model/catalogCategory.ts"],"names":[],"mappings":";;AAgBA,MAAa,eAAe;IAexB,MAAM,CAAC,mBAAmB;QACtB,OAAO,eAAe,CAAC,gBAAgB,CAAC;IAC5C,CAAC;;AAXM,6BAAa,GAAuB,SAAS,CAAC;AAE9C,gCAAgB,GAA0D;IAC7E;QACI,MAAM,EAAE,MAAM;QACd,UAAU,EAAE,MAAM;QAClB,MAAM,EAAE,QAAQ;KACnB;CAAK,CAAC;AAbf,0CAkBC"}

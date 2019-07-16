@@ -1,0 +1,12 @@
+export declare enum Product {
+    SQUAREPOS,
+    EXTERNALAPI,
+    BILLING,
+    APPOINTMENTS,
+    INVOICES,
+    ONLINESTORE,
+    PAYROLL,
+    DASHBOARD,
+    ITEMLIBRARYIMPORT,
+    OTHER
+}

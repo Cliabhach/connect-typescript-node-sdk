@@ -1,0 +1,1 @@
+{"version":3,"file":"catalogQueryItemsForTax.js","sourceRoot":"","sources":["../../model/catalogQueryItemsForTax.ts"],"names":[],"mappings":";;AAgBA,MAAa,uBAAuB;IAehC,MAAM,CAAC,mBAAmB;QACtB,OAAO,uBAAuB,CAAC,gBAAgB,CAAC;IACpD,CAAC;;AAXM,qCAAa,GAAuB,SAAS,CAAC;AAE9C,wCAAgB,GAA0D;IAC7E;QACI,MAAM,EAAE,QAAQ;QAChB,UAAU,EAAE,SAAS;QACrB,MAAM,EAAE,eAAe;KAC1B;CAAK,CAAC;AAbf,0DAkBC"}

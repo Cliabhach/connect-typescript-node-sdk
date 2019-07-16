@@ -1,0 +1,1 @@
+{"version":3,"file":"customerPreferences.js","sourceRoot":"","sources":["../../model/customerPreferences.ts"],"names":[],"mappings":";;AAgBA,MAAa,mBAAmB;IAe5B,MAAM,CAAC,mBAAmB;QACtB,OAAO,mBAAmB,CAAC,gBAAgB,CAAC;IAChD,CAAC;;AAXM,iCAAa,GAAuB,SAAS,CAAC;AAE9C,oCAAgB,GAA0D;IAC7E;QACI,MAAM,EAAE,mBAAmB;QAC3B,UAAU,EAAE,oBAAoB;QAChC,MAAM,EAAE,SAAS;KACpB;CAAK,CAAC;AAbf,kDAkBC"}
