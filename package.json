@@ -1,8 +1,8 @@
 {
     "name": "square-connect-ts",
     "version": "2.20190710.0",
-    "description": "NodeJS client for square-connect-ts",
-    "repository": "square/connect-typescript-node-sdk",
+    "description": "Unofficial TypeScript client for Square Connect API",
+    "repository": "Cliabhach/connect-typescript-node-sdk",
     "private": true,
     "main": "dist/api.js",
     "types": "dist/api.d.ts",
