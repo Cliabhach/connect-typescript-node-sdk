@@ -26,6 +26,6 @@ limitations under the License.
 ```
 
 
-[1] https://github.com/square/connect-nodejs-sdk
-[2] https://github.com/OpenAPITools/openapi-generator
-[3] https://github.com/square/connect-api-specification
+[1]: https://github.com/square/connect-nodejs-sdk
+[2]: https://github.com/OpenAPITools/openapi-generator
+[3]: https://github.com/square/connect-api-specification
