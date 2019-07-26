@@ -1,5 +1,5 @@
 export declare enum OrderLineItemTaxScope {
-    OTHERTAXSCOPE,
-    LINEITEM,
+    OTHER_TAX_SCOPE,
+    LINE_ITEM,
     ORDER
 }

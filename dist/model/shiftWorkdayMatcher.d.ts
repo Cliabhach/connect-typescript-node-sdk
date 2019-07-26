@@ -1,5 +1,5 @@
 export declare enum ShiftWorkdayMatcher {
-    STARTAT,
-    ENDAT,
+    START_AT,
+    END_AT,
     INTERSECTION
 }

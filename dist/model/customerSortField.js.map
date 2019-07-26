@@ -1,1 +1,1 @@
-{"version":3,"file":"customerSortField.js","sourceRoot":"","sources":["../../model/customerSortField.ts"],"names":[],"mappings":";;AAgBA,IAAY,iBAGX;AAHD,WAAY,iBAAiB;IACzB,iDAAgB,SAAS,aAAA,CAAA;IACzB,mDAAkB,YAAY,eAAA,CAAA;AAClC,CAAC,EAHW,iBAAiB,GAAjB,yBAAiB,KAAjB,yBAAiB,QAG5B"}
+{"version":3,"file":"customerSortField.js","sourceRoot":"","sources":["../../model/customerSortField.ts"],"names":[],"mappings":";;AAgBA,IAAY,iBAGX;AAHD,WAAY,iBAAiB;IACzB,iDAAgB,SAAS,aAAA,CAAA;IACzB,oDAAmB,YAAY,gBAAA,CAAA;AACnC,CAAC,EAHW,iBAAiB,GAAjB,yBAAiB,KAAjB,yBAAiB,QAG5B"}

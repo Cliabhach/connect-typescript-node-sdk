@@ -1,5 +1,5 @@
 export declare enum Currency {
-    UNKNOWNCURRENCY,
+    UNKNOWN_CURRENCY,
     AED,
     AFN,
     ALL,

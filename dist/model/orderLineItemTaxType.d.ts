@@ -1,5 +1,5 @@
 export declare enum OrderLineItemTaxType {
-    UNKNOWNTAX,
+    UNKNOWN_TAX,
     ADDITIVE,
     INCLUSIVE
 }

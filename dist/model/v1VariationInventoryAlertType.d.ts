@@ -1,5 +1,5 @@
 export declare enum V1VariationInventoryAlertType {
-    LOWQUANTITY,
+    LOW_QUANTITY,
     NONE,
     INVESTMENT,
     LOAN,

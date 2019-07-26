@@ -1,4 +1,4 @@
 export declare enum V1VariationPricingType {
-    FIXEDPRICING,
-    VARIABLEPRICING
+    FIXED_PRICING,
+    VARIABLE_PRICING
 }

@@ -1,5 +1,5 @@
 export declare enum InventoryChangeType {
-    PHYSICALCOUNT,
+    PHYSICAL_COUNT,
     ADJUSTMENT,
     TRANSFER
 }

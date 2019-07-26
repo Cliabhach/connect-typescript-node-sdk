@@ -1,7 +1,7 @@
 export declare enum CatalogItemProductType {
     REGULAR,
-    GIFTCARD,
-    APPOINTMENTSSERVICE,
-    RETAILITEM,
-    RESTAURANTITEM
+    GIFT_CARD,
+    APPOINTMENTS_SERVICE,
+    RETAIL_ITEM,
+    RESTAURANT_ITEM
 }

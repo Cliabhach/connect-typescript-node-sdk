@@ -1,1 +1,1 @@
-{"version":3,"file":"measurementUnitGeneric.js","sourceRoot":"","sources":["../../model/measurementUnitGeneric.ts"],"names":[],"mappings":";;AAgBA,IAAY,sBAGX;AAHD,WAAY,sBAAsB;IAC9B,sEAA2B,sBAAsB,wBAAA,CAAA;IACjD,wDAAa,MAAM,UAAA,CAAA;AACvB,CAAC,EAHW,sBAAsB,GAAtB,8BAAsB,KAAtB,8BAAsB,QAGjC"}
+{"version":3,"file":"measurementUnitGeneric.js","sourceRoot":"","sources":["../../model/measurementUnitGeneric.ts"],"names":[],"mappings":";;AAgBA,IAAY,sBAGX;AAHD,WAAY,sBAAsB;IAC9B,wEAA6B,sBAAsB,0BAAA,CAAA;IACnD,wDAAa,MAAM,UAAA,CAAA;AACvB,CAAC,EAHW,sBAAsB,GAAtB,8BAAsB,KAAtB,8BAAsB,QAGjC"}

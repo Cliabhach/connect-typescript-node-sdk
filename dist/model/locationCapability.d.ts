@@ -1,3 +1,3 @@
 export declare enum LocationCapability {
-    CREDITCARDPROCESSING
+    CREDIT_CARD_PROCESSING
 }

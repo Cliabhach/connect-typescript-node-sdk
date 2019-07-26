@@ -1,4 +1,4 @@
 export declare enum CustomerSortField {
     DEFAULT,
-    CREATEDAT
+    CREATED_AT
 }

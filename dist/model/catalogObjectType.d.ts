@@ -2,12 +2,12 @@ export declare enum CatalogObjectType {
     ITEM,
     IMAGE,
     CATEGORY,
-    ITEMVARIATION,
+    ITEM_VARIATION,
     TAX,
     DISCOUNT,
-    MODIFIERLIST,
+    MODIFIER_LIST,
     MODIFIER,
-    PRICINGRULE,
-    PRODUCTSET,
-    TIMEPERIOD
+    PRICING_RULE,
+    PRODUCT_SET,
+    TIME_PERIOD
 }

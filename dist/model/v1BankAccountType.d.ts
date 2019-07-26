@@ -1,5 +1,5 @@
 export declare enum V1BankAccountType {
-    BUSINESSCHECKING,
+    BUSINESS_CHECKING,
     CHECKING,
     INVESTMENT,
     LOAN,

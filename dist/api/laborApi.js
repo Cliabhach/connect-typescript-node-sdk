@@ -64,30 +64,33 @@ class LaborApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "CreateBreakTypeRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "CreateBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "CreateBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -110,30 +113,33 @@ class LaborApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "CreateShiftRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "CreateShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "CreateShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -156,30 +162,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "DeleteBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "DeleteBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -202,30 +211,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "DeleteShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "DeleteShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -248,30 +260,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "GetBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "GetBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -294,30 +309,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "GetEmployeeWageResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "GetEmployeeWageResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -340,30 +358,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "GetShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "GetShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -391,30 +412,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "ListBreakTypesResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "ListBreakTypesResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -442,30 +466,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "ListEmployeeWagesResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "ListEmployeeWagesResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -490,30 +517,33 @@ class LaborApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "ListWorkweekConfigsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "ListWorkweekConfigsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -536,30 +566,33 @@ class LaborApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "SearchShiftsRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "SearchShiftsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "SearchShiftsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -586,30 +619,33 @@ class LaborApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "UpdateBreakTypeRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "UpdateBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "UpdateBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -636,30 +672,33 @@ class LaborApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "UpdateShiftRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "UpdateShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "UpdateShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -686,30 +725,33 @@ class LaborApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "UpdateWorkweekConfigRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "UpdateWorkweekConfigResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "UpdateWorkweekConfigResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }

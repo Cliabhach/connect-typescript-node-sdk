@@ -1,5 +1,5 @@
 export declare enum V1PageCellPlaceholderType {
-    ALLITEMS,
-    DISCOUNTSCATEGORY,
-    REWARDSFINDER
+    ALL_ITEMS,
+    DISCOUNTS_CATEGORY,
+    REWARDS_FINDER
 }

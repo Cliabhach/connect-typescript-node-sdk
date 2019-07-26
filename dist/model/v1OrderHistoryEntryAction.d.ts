@@ -1,7 +1,7 @@
 export declare enum V1OrderHistoryEntryAction {
-    ORDERPLACED,
+    ORDER_PLACED,
     DECLINED,
-    PAYMENTRECEIVED,
+    PAYMENT_RECEIVED,
     CANCELED,
     COMPLETED,
     REFUNDED,

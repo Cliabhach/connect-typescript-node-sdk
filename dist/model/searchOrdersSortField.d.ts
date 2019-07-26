@@ -1,5 +1,5 @@
 export declare enum SearchOrdersSortField {
-    CREATEDAT,
-    UPDATEDAT,
-    CLOSEDAT
+    CREATED_AT,
+    UPDATED_AT,
+    CLOSED_AT
 }

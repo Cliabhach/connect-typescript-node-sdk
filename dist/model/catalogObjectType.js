@@ -5,13 +5,13 @@ var CatalogObjectType;
     CatalogObjectType[CatalogObjectType["ITEM"] = 'ITEM'] = "ITEM";
     CatalogObjectType[CatalogObjectType["IMAGE"] = 'IMAGE'] = "IMAGE";
     CatalogObjectType[CatalogObjectType["CATEGORY"] = 'CATEGORY'] = "CATEGORY";
-    CatalogObjectType[CatalogObjectType["ITEMVARIATION"] = 'ITEM_VARIATION'] = "ITEMVARIATION";
+    CatalogObjectType[CatalogObjectType["ITEM_VARIATION"] = 'ITEM_VARIATION'] = "ITEM_VARIATION";
     CatalogObjectType[CatalogObjectType["TAX"] = 'TAX'] = "TAX";
     CatalogObjectType[CatalogObjectType["DISCOUNT"] = 'DISCOUNT'] = "DISCOUNT";
-    CatalogObjectType[CatalogObjectType["MODIFIERLIST"] = 'MODIFIER_LIST'] = "MODIFIERLIST";
+    CatalogObjectType[CatalogObjectType["MODIFIER_LIST"] = 'MODIFIER_LIST'] = "MODIFIER_LIST";
     CatalogObjectType[CatalogObjectType["MODIFIER"] = 'MODIFIER'] = "MODIFIER";
-    CatalogObjectType[CatalogObjectType["PRICINGRULE"] = 'PRICING_RULE'] = "PRICINGRULE";
-    CatalogObjectType[CatalogObjectType["PRODUCTSET"] = 'PRODUCT_SET'] = "PRODUCTSET";
-    CatalogObjectType[CatalogObjectType["TIMEPERIOD"] = 'TIME_PERIOD'] = "TIMEPERIOD";
+    CatalogObjectType[CatalogObjectType["PRICING_RULE"] = 'PRICING_RULE'] = "PRICING_RULE";
+    CatalogObjectType[CatalogObjectType["PRODUCT_SET"] = 'PRODUCT_SET'] = "PRODUCT_SET";
+    CatalogObjectType[CatalogObjectType["TIME_PERIOD"] = 'TIME_PERIOD'] = "TIME_PERIOD";
 })(CatalogObjectType = exports.CatalogObjectType || (exports.CatalogObjectType = {}));
 //# sourceMappingURL=catalogObjectType.js.map

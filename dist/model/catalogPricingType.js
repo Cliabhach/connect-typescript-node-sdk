@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var CatalogPricingType;
 (function (CatalogPricingType) {
-    CatalogPricingType[CatalogPricingType["FIXEDPRICING"] = 'FIXED_PRICING'] = "FIXEDPRICING";
-    CatalogPricingType[CatalogPricingType["VARIABLEPRICING"] = 'VARIABLE_PRICING'] = "VARIABLEPRICING";
+    CatalogPricingType[CatalogPricingType["FIXED_PRICING"] = 'FIXED_PRICING'] = "FIXED_PRICING";
+    CatalogPricingType[CatalogPricingType["VARIABLE_PRICING"] = 'VARIABLE_PRICING'] = "VARIABLE_PRICING";
 })(CatalogPricingType = exports.CatalogPricingType || (exports.CatalogPricingType = {}));
 //# sourceMappingURL=catalogPricingType.js.map

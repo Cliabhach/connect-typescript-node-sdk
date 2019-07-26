@@ -398,7 +398,7 @@ export declare class ObjectSerializer {
     static deserialize(data: any, type: string): any;
 }
 export interface Authentication {
-    applyToRequest(requestOptions: localVarRequest.Options): void;
+    applyToRequest(requestOptions: localVarRequest.Options): Promise<void> | void;
 }
 export declare class HttpBasicAuth implements Authentication {
     username: string;

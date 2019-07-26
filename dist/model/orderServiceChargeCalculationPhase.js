@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var OrderServiceChargeCalculationPhase;
 (function (OrderServiceChargeCalculationPhase) {
-    OrderServiceChargeCalculationPhase[OrderServiceChargeCalculationPhase["SUBTOTALPHASE"] = 'SUBTOTAL_PHASE'] = "SUBTOTALPHASE";
-    OrderServiceChargeCalculationPhase[OrderServiceChargeCalculationPhase["TOTALPHASE"] = 'TOTAL_PHASE'] = "TOTALPHASE";
+    OrderServiceChargeCalculationPhase[OrderServiceChargeCalculationPhase["SUBTOTAL_PHASE"] = 'SUBTOTAL_PHASE'] = "SUBTOTAL_PHASE";
+    OrderServiceChargeCalculationPhase[OrderServiceChargeCalculationPhase["TOTAL_PHASE"] = 'TOTAL_PHASE'] = "TOTAL_PHASE";
 })(OrderServiceChargeCalculationPhase = exports.OrderServiceChargeCalculationPhase || (exports.OrderServiceChargeCalculationPhase = {}));
 //# sourceMappingURL=orderServiceChargeCalculationPhase.js.map

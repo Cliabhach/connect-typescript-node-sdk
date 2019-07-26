@@ -1,1 +1,1 @@
-{"version":3,"file":"inventoryAlertType.js","sourceRoot":"","sources":["../../model/inventoryAlertType.ts"],"names":[],"mappings":";;AAgBA,IAAY,kBAGX;AAHD,WAAY,kBAAkB;IAC1B,gDAAa,MAAM,UAAA,CAAA;IACnB,uDAAoB,cAAc,iBAAA,CAAA;AACtC,CAAC,EAHW,kBAAkB,GAAlB,0BAAkB,KAAlB,0BAAkB,QAG7B"}
+{"version":3,"file":"inventoryAlertType.js","sourceRoot":"","sources":["../../model/inventoryAlertType.ts"],"names":[],"mappings":";;AAgBA,IAAY,kBAGX;AAHD,WAAY,kBAAkB;IAC1B,gDAAa,MAAM,UAAA,CAAA;IACnB,wDAAqB,cAAc,kBAAA,CAAA;AACvC,CAAC,EAHW,kBAAkB,GAAlB,0BAAkB,KAAlB,0BAAkB,QAG7B"}

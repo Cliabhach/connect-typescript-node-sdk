@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var ShiftSortField;
 (function (ShiftSortField) {
-    ShiftSortField[ShiftSortField["STARTAT"] = 'START_AT'] = "STARTAT";
-    ShiftSortField[ShiftSortField["ENDAT"] = 'END_AT'] = "ENDAT";
-    ShiftSortField[ShiftSortField["CREATEDAT"] = 'CREATED_AT'] = "CREATEDAT";
-    ShiftSortField[ShiftSortField["UPDATEDAT"] = 'UPDATED_AT'] = "UPDATEDAT";
+    ShiftSortField[ShiftSortField["START_AT"] = 'START_AT'] = "START_AT";
+    ShiftSortField[ShiftSortField["END_AT"] = 'END_AT'] = "END_AT";
+    ShiftSortField[ShiftSortField["CREATED_AT"] = 'CREATED_AT'] = "CREATED_AT";
+    ShiftSortField[ShiftSortField["UPDATED_AT"] = 'UPDATED_AT'] = "UPDATED_AT";
 })(ShiftSortField = exports.ShiftSortField || (exports.ShiftSortField = {}));
 //# sourceMappingURL=shiftSortField.js.map

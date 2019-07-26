@@ -1,4 +1,4 @@
 export declare enum OrderServiceChargeCalculationPhase {
-    SUBTOTALPHASE,
-    TOTALPHASE
+    SUBTOTAL_PHASE,
+    TOTAL_PHASE
 }

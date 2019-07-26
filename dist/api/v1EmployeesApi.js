@@ -64,30 +64,33 @@ class V1EmployeesApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "V1Employee")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1Employee");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1Employee");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -110,30 +113,33 @@ class V1EmployeesApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(employeeRole, "V1EmployeeRole")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1EmployeeRole");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1EmployeeRole");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -156,30 +162,33 @@ class V1EmployeesApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "V1Timecard")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1Timecard");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1Timecard");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -202,30 +211,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "object");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "object");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -257,30 +269,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "Array<V1CashDrawerShift>");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "Array<V1CashDrawerShift>");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -308,30 +323,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "Array<V1EmployeeRole>");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "Array<V1EmployeeRole>");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -377,30 +395,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "Array<V1Employee>");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "Array<V1Employee>");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -423,30 +444,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "Array<V1TimecardEvent>");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "Array<V1TimecardEvent>");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -498,30 +522,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "Array<V1Timecard>");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "Array<V1Timecard>");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -548,30 +575,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1CashDrawerShift");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1CashDrawerShift");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -594,30 +624,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1Employee");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1Employee");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -640,30 +673,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1EmployeeRole");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1EmployeeRole");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -686,30 +722,33 @@ class V1EmployeesApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1Timecard");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1Timecard");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -736,30 +775,33 @@ class V1EmployeesApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "V1Employee")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1Employee");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1Employee");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -786,30 +828,33 @@ class V1EmployeesApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "V1EmployeeRole")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1EmployeeRole");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1EmployeeRole");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -836,30 +881,33 @@ class V1EmployeesApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "V1Timecard")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "V1Timecard");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "V1Timecard");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }

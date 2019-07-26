@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var V1BankAccountType;
 (function (V1BankAccountType) {
-    V1BankAccountType[V1BankAccountType["BUSINESSCHECKING"] = 'BUSINESS_CHECKING'] = "BUSINESSCHECKING";
+    V1BankAccountType[V1BankAccountType["BUSINESS_CHECKING"] = 'BUSINESS_CHECKING'] = "BUSINESS_CHECKING";
     V1BankAccountType[V1BankAccountType["CHECKING"] = 'CHECKING'] = "CHECKING";
     V1BankAccountType[V1BankAccountType["INVESTMENT"] = 'INVESTMENT'] = "INVESTMENT";
     V1BankAccountType[V1BankAccountType["LOAN"] = 'LOAN'] = "LOAN";

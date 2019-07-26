@@ -3,6 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var InventoryAlertType;
 (function (InventoryAlertType) {
     InventoryAlertType[InventoryAlertType["NONE"] = 'NONE'] = "NONE";
-    InventoryAlertType[InventoryAlertType["LOWQUANTITY"] = 'LOW_QUANTITY'] = "LOWQUANTITY";
+    InventoryAlertType[InventoryAlertType["LOW_QUANTITY"] = 'LOW_QUANTITY'] = "LOW_QUANTITY";
 })(InventoryAlertType = exports.InventoryAlertType || (exports.InventoryAlertType = {}));
 //# sourceMappingURL=inventoryAlertType.js.map

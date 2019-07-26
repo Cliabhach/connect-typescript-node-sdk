@@ -2,11 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var MeasurementUnitWeight;
 (function (MeasurementUnitWeight) {
-    MeasurementUnitWeight[MeasurementUnitWeight["IMPERIALWEIGHTOUNCE"] = 'IMPERIAL_WEIGHT_OUNCE'] = "IMPERIALWEIGHTOUNCE";
-    MeasurementUnitWeight[MeasurementUnitWeight["IMPERIALPOUND"] = 'IMPERIAL_POUND'] = "IMPERIALPOUND";
-    MeasurementUnitWeight[MeasurementUnitWeight["IMPERIALSTONE"] = 'IMPERIAL_STONE'] = "IMPERIALSTONE";
-    MeasurementUnitWeight[MeasurementUnitWeight["METRICMILLIGRAM"] = 'METRIC_MILLIGRAM'] = "METRICMILLIGRAM";
-    MeasurementUnitWeight[MeasurementUnitWeight["METRICGRAM"] = 'METRIC_GRAM'] = "METRICGRAM";
-    MeasurementUnitWeight[MeasurementUnitWeight["METRICKILOGRAM"] = 'METRIC_KILOGRAM'] = "METRICKILOGRAM";
+    MeasurementUnitWeight[MeasurementUnitWeight["IMPERIAL_WEIGHT_OUNCE"] = 'IMPERIAL_WEIGHT_OUNCE'] = "IMPERIAL_WEIGHT_OUNCE";
+    MeasurementUnitWeight[MeasurementUnitWeight["IMPERIAL_POUND"] = 'IMPERIAL_POUND'] = "IMPERIAL_POUND";
+    MeasurementUnitWeight[MeasurementUnitWeight["IMPERIAL_STONE"] = 'IMPERIAL_STONE'] = "IMPERIAL_STONE";
+    MeasurementUnitWeight[MeasurementUnitWeight["METRIC_MILLIGRAM"] = 'METRIC_MILLIGRAM'] = "METRIC_MILLIGRAM";
+    MeasurementUnitWeight[MeasurementUnitWeight["METRIC_GRAM"] = 'METRIC_GRAM'] = "METRIC_GRAM";
+    MeasurementUnitWeight[MeasurementUnitWeight["METRIC_KILOGRAM"] = 'METRIC_KILOGRAM'] = "METRIC_KILOGRAM";
 })(MeasurementUnitWeight = exports.MeasurementUnitWeight || (exports.MeasurementUnitWeight = {}));
 //# sourceMappingURL=measurementUnitWeight.js.map

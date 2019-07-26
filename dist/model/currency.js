@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Currency;
 (function (Currency) {
-    Currency[Currency["UNKNOWNCURRENCY"] = 'UNKNOWN_CURRENCY'] = "UNKNOWNCURRENCY";
+    Currency[Currency["UNKNOWN_CURRENCY"] = 'UNKNOWN_CURRENCY'] = "UNKNOWN_CURRENCY";
     Currency[Currency["AED"] = 'AED'] = "AED";
     Currency[Currency["AFN"] = 'AFN'] = "AFN";
     Currency[Currency["ALL"] = 'ALL'] = "ALL";

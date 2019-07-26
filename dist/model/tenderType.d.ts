@@ -1,8 +1,8 @@
 export declare enum TenderType {
     CARD,
     CASH,
-    THIRDPARTYCARD,
-    SQUAREGIFTCARD,
-    NOSALE,
+    THIRD_PARTY_CARD,
+    SQUARE_GIFT_CARD,
+    NO_SALE,
     OTHER
 }

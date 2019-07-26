@@ -64,30 +64,33 @@ class InventoryApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "BatchChangeInventoryRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "BatchChangeInventoryResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "BatchChangeInventoryResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -110,30 +113,33 @@ class InventoryApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "BatchRetrieveInventoryChangesRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "BatchRetrieveInventoryChangesResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "BatchRetrieveInventoryChangesResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -156,30 +162,33 @@ class InventoryApi {
             json: true,
             body: models_1.ObjectSerializer.serialize(body, "BatchRetrieveInventoryCountsRequest")
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "BatchRetrieveInventoryCountsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "BatchRetrieveInventoryCountsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -202,30 +211,33 @@ class InventoryApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryAdjustmentResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryAdjustmentResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -254,30 +266,33 @@ class InventoryApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryChangesResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryChangesResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -306,30 +321,33 @@ class InventoryApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryCountResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryCountResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }
@@ -352,30 +370,33 @@ class InventoryApi {
             useQuerystring: this._useQuerystring,
             json: true,
         };
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                localVarRequestOptions.formData = localVarFormParams;
-            }
-            else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    localVarRequestOptions.formData = localVarFormParams;
                 }
                 else {
-                    body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryPhysicalCountResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
                     }
                     else {
-                        reject({ response: response, body: body });
+                        body = models_1.ObjectSerializer.deserialize(body, "RetrieveInventoryPhysicalCountResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        }
+                        else {
+                            reject({ response: response, body: body });
+                        }
                     }
-                }
+                });
             });
         });
     }

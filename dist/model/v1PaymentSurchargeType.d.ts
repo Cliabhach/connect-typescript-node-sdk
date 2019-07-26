@@ -1,5 +1,5 @@
 export declare enum V1PaymentSurchargeType {
     UNKNOWN,
-    AUTOGRATUITY,
+    AUTO_GRATUITY,
     CUSTOM
 }

@@ -1,4 +1,4 @@
 export declare enum CatalogPricingType {
-    FIXEDPRICING,
-    VARIABLEPRICING
+    FIXED_PRICING,
+    VARIABLE_PRICING
 }

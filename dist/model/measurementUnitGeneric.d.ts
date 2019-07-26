@@ -1,4 +1,4 @@
 export declare enum MeasurementUnitGeneric {
-    INVALIDGENERICUNIT,
+    INVALID_GENERIC_UNIT,
     UNIT
 }

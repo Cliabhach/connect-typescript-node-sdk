@@ -1,1 +1,1 @@
-{"version":3,"file":"locationCapability.js","sourceRoot":"","sources":["../../model/locationCapability.ts"],"names":[],"mappings":";;AAgBA,IAAY,kBAEX;AAFD,WAAY,kBAAkB;IAC1B,gEAA6B,wBAAwB,0BAAA,CAAA;AACzD,CAAC,EAFW,kBAAkB,GAAlB,0BAAkB,KAAlB,0BAAkB,QAE7B"}
+{"version":3,"file":"locationCapability.js","sourceRoot":"","sources":["../../model/locationCapability.ts"],"names":[],"mappings":";;AAgBA,IAAY,kBAEX;AAFD,WAAY,kBAAkB;IAC1B,kEAA+B,wBAAwB,4BAAA,CAAA;AAC3D,CAAC,EAFW,kBAAkB,GAAlB,0BAAkB,KAAlB,0BAAkB,QAE7B"}

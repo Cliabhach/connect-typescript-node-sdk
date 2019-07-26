@@ -1,4 +1,4 @@
 export declare enum InventoryAlertType {
     NONE,
-    LOWQUANTITY
+    LOW_QUANTITY
 }

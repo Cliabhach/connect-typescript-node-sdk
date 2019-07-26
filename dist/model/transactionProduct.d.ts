@@ -1,10 +1,10 @@
 export declare enum TransactionProduct {
     REGISTER,
-    EXTERNALAPI,
+    EXTERNAL_API,
     BILLING,
     APPOINTMENTS,
     INVOICES,
-    ONLINESTORE,
+    ONLINE_STORE,
     PAYROLL,
     OTHER
 }

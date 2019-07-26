@@ -3,16 +3,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var InventoryState;
 (function (InventoryState) {
     InventoryState[InventoryState["CUSTOM"] = 'CUSTOM'] = "CUSTOM";
-    InventoryState[InventoryState["INSTOCK"] = 'IN_STOCK'] = "INSTOCK";
+    InventoryState[InventoryState["IN_STOCK"] = 'IN_STOCK'] = "IN_STOCK";
     InventoryState[InventoryState["SOLD"] = 'SOLD'] = "SOLD";
-    InventoryState[InventoryState["RETURNEDBYCUSTOMER"] = 'RETURNED_BY_CUSTOMER'] = "RETURNEDBYCUSTOMER";
-    InventoryState[InventoryState["RESERVEDFORSALE"] = 'RESERVED_FOR_SALE'] = "RESERVEDFORSALE";
-    InventoryState[InventoryState["SOLDONLINE"] = 'SOLD_ONLINE'] = "SOLDONLINE";
-    InventoryState[InventoryState["ORDEREDFROMVENDOR"] = 'ORDERED_FROM_VENDOR'] = "ORDEREDFROMVENDOR";
-    InventoryState[InventoryState["RECEIVEDFROMVENDOR"] = 'RECEIVED_FROM_VENDOR'] = "RECEIVEDFROMVENDOR";
-    InventoryState[InventoryState["INTRANSITTO"] = 'IN_TRANSIT_TO'] = "INTRANSITTO";
+    InventoryState[InventoryState["RETURNED_BY_CUSTOMER"] = 'RETURNED_BY_CUSTOMER'] = "RETURNED_BY_CUSTOMER";
+    InventoryState[InventoryState["RESERVED_FOR_SALE"] = 'RESERVED_FOR_SALE'] = "RESERVED_FOR_SALE";
+    InventoryState[InventoryState["SOLD_ONLINE"] = 'SOLD_ONLINE'] = "SOLD_ONLINE";
+    InventoryState[InventoryState["ORDERED_FROM_VENDOR"] = 'ORDERED_FROM_VENDOR'] = "ORDERED_FROM_VENDOR";
+    InventoryState[InventoryState["RECEIVED_FROM_VENDOR"] = 'RECEIVED_FROM_VENDOR'] = "RECEIVED_FROM_VENDOR";
+    InventoryState[InventoryState["IN_TRANSIT_TO"] = 'IN_TRANSIT_TO'] = "IN_TRANSIT_TO";
     InventoryState[InventoryState["NONE"] = 'NONE'] = "NONE";
     InventoryState[InventoryState["WASTE"] = 'WASTE'] = "WASTE";
-    InventoryState[InventoryState["UNLINKEDRETURN"] = 'UNLINKED_RETURN'] = "UNLINKEDRETURN";
+    InventoryState[InventoryState["UNLINKED_RETURN"] = 'UNLINKED_RETURN'] = "UNLINKED_RETURN";
 })(InventoryState = exports.InventoryState || (exports.InventoryState = {}));
 //# sourceMappingURL=inventoryState.js.map

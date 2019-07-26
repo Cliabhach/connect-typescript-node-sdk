@@ -1,5 +1,5 @@
 export declare enum V1FeeCalculationPhase {
-    FEESUBTOTALPHASE,
+    FEE_SUBTOTAL_PHASE,
     OTHER,
-    FEETOTALPHASE
+    FEE_TOTAL_PHASE
 }

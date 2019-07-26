@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var OrderLineItemDiscountType;
 (function (OrderLineItemDiscountType) {
-    OrderLineItemDiscountType[OrderLineItemDiscountType["UNKNOWNDISCOUNT"] = 'UNKNOWN_DISCOUNT'] = "UNKNOWNDISCOUNT";
-    OrderLineItemDiscountType[OrderLineItemDiscountType["FIXEDPERCENTAGE"] = 'FIXED_PERCENTAGE'] = "FIXEDPERCENTAGE";
-    OrderLineItemDiscountType[OrderLineItemDiscountType["FIXEDAMOUNT"] = 'FIXED_AMOUNT'] = "FIXEDAMOUNT";
-    OrderLineItemDiscountType[OrderLineItemDiscountType["VARIABLEPERCENTAGE"] = 'VARIABLE_PERCENTAGE'] = "VARIABLEPERCENTAGE";
-    OrderLineItemDiscountType[OrderLineItemDiscountType["VARIABLEAMOUNT"] = 'VARIABLE_AMOUNT'] = "VARIABLEAMOUNT";
+    OrderLineItemDiscountType[OrderLineItemDiscountType["UNKNOWN_DISCOUNT"] = 'UNKNOWN_DISCOUNT'] = "UNKNOWN_DISCOUNT";
+    OrderLineItemDiscountType[OrderLineItemDiscountType["FIXED_PERCENTAGE"] = 'FIXED_PERCENTAGE'] = "FIXED_PERCENTAGE";
+    OrderLineItemDiscountType[OrderLineItemDiscountType["FIXED_AMOUNT"] = 'FIXED_AMOUNT'] = "FIXED_AMOUNT";
+    OrderLineItemDiscountType[OrderLineItemDiscountType["VARIABLE_PERCENTAGE"] = 'VARIABLE_PERCENTAGE'] = "VARIABLE_PERCENTAGE";
+    OrderLineItemDiscountType[OrderLineItemDiscountType["VARIABLE_AMOUNT"] = 'VARIABLE_AMOUNT'] = "VARIABLE_AMOUNT";
 })(OrderLineItemDiscountType = exports.OrderLineItemDiscountType || (exports.OrderLineItemDiscountType = {}));
 //# sourceMappingURL=orderLineItemDiscountType.js.map

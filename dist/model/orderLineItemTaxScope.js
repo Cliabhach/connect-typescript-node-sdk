@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var OrderLineItemTaxScope;
 (function (OrderLineItemTaxScope) {
-    OrderLineItemTaxScope[OrderLineItemTaxScope["OTHERTAXSCOPE"] = 'OTHER_TAX_SCOPE'] = "OTHERTAXSCOPE";
-    OrderLineItemTaxScope[OrderLineItemTaxScope["LINEITEM"] = 'LINE_ITEM'] = "LINEITEM";
+    OrderLineItemTaxScope[OrderLineItemTaxScope["OTHER_TAX_SCOPE"] = 'OTHER_TAX_SCOPE'] = "OTHER_TAX_SCOPE";
+    OrderLineItemTaxScope[OrderLineItemTaxScope["LINE_ITEM"] = 'LINE_ITEM'] = "LINE_ITEM";
     OrderLineItemTaxScope[OrderLineItemTaxScope["ORDER"] = 'ORDER'] = "ORDER";
 })(OrderLineItemTaxScope = exports.OrderLineItemTaxScope || (exports.OrderLineItemTaxScope = {}));
 //# sourceMappingURL=orderLineItemTaxScope.js.map

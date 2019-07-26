@@ -1,5 +1,5 @@
 export declare enum V1ItemType {
     NORMAL,
-    GIFTCARD,
+    GIFT_CARD,
     OTHER
 }

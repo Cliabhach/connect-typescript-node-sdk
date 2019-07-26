@@ -1,10 +1,10 @@
 export declare enum V1TenderType {
-    CREDITCARD,
+    CREDIT_CARD,
     CASH,
-    THIRDPARTYCARD,
-    NOSALE,
-    SQUAREWALLET,
-    SQUAREGIFTCARD,
+    THIRD_PARTY_CARD,
+    NO_SALE,
+    SQUARE_WALLET,
+    SQUARE_GIFT_CARD,
     UNKNOWN,
     OTHER
 }
