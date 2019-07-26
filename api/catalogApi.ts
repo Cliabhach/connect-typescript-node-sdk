@@ -122,29 +122,31 @@ export class CatalogApi {
             body: ObjectSerializer.serialize(body, "BatchDeleteCatalogObjectsRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: BatchDeleteCatalogObjectsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "BatchDeleteCatalogObjectsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: BatchDeleteCatalogObjectsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "BatchDeleteCatalogObjectsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -178,29 +180,31 @@ export class CatalogApi {
             body: ObjectSerializer.serialize(body, "BatchRetrieveCatalogObjectsRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: BatchRetrieveCatalogObjectsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "BatchRetrieveCatalogObjectsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: BatchRetrieveCatalogObjectsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "BatchRetrieveCatalogObjectsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -234,29 +238,31 @@ export class CatalogApi {
             body: ObjectSerializer.serialize(body, "BatchUpsertCatalogObjectsRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: BatchUpsertCatalogObjectsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "BatchUpsertCatalogObjectsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: BatchUpsertCatalogObjectsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "BatchUpsertCatalogObjectsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -283,29 +289,31 @@ export class CatalogApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: CatalogInfoResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "CatalogInfoResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: CatalogInfoResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "CatalogInfoResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -339,29 +347,31 @@ export class CatalogApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: DeleteCatalogObjectResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "DeleteCatalogObjectResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: DeleteCatalogObjectResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "DeleteCatalogObjectResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -398,29 +408,31 @@ export class CatalogApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: ListCatalogResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ListCatalogResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: ListCatalogResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "ListCatalogResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -459,29 +471,31 @@ export class CatalogApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: RetrieveCatalogObjectResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "RetrieveCatalogObjectResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: RetrieveCatalogObjectResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "RetrieveCatalogObjectResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -515,29 +529,31 @@ export class CatalogApi {
             body: ObjectSerializer.serialize(body, "SearchCatalogObjectsRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: SearchCatalogObjectsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "SearchCatalogObjectsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: SearchCatalogObjectsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "SearchCatalogObjectsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -571,29 +587,31 @@ export class CatalogApi {
             body: ObjectSerializer.serialize(body, "UpdateItemModifierListsRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: UpdateItemModifierListsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "UpdateItemModifierListsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: UpdateItemModifierListsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "UpdateItemModifierListsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -627,29 +645,31 @@ export class CatalogApi {
             body: ObjectSerializer.serialize(body, "UpdateItemTaxesRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: UpdateItemTaxesResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "UpdateItemTaxesResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: UpdateItemTaxesResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "UpdateItemTaxesResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -683,29 +703,31 @@ export class CatalogApi {
             body: ObjectSerializer.serialize(body, "UpsertCatalogObjectRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: UpsertCatalogObjectResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "UpsertCatalogObjectResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: UpsertCatalogObjectResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "UpsertCatalogObjectResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }

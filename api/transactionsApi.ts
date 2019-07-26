@@ -120,29 +120,31 @@ export class TransactionsApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: CaptureTransactionResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "CaptureTransactionResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: CaptureTransactionResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "CaptureTransactionResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -183,29 +185,31 @@ export class TransactionsApi {
             body: ObjectSerializer.serialize(body, "ChargeRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: ChargeResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ChargeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: ChargeResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "ChargeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -253,29 +257,31 @@ export class TransactionsApi {
             body: ObjectSerializer.serialize(body, "CreateRefundRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: CreateRefundResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "CreateRefundResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: CreateRefundResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "CreateRefundResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -329,29 +335,31 @@ export class TransactionsApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: ListRefundsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ListRefundsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: ListRefundsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "ListRefundsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -405,29 +413,31 @@ export class TransactionsApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: ListTransactionsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ListTransactionsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: ListTransactionsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "ListTransactionsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -468,29 +478,31 @@ export class TransactionsApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: RetrieveTransactionResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "RetrieveTransactionResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: RetrieveTransactionResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "RetrieveTransactionResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -531,29 +543,31 @@ export class TransactionsApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: VoidTransactionResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "VoidTransactionResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: VoidTransactionResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "VoidTransactionResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }

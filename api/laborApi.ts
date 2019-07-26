@@ -124,29 +124,31 @@ export class LaborApi {
             body: ObjectSerializer.serialize(body, "CreateBreakTypeRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: CreateBreakTypeResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "CreateBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: CreateBreakTypeResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "CreateBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -180,29 +182,31 @@ export class LaborApi {
             body: ObjectSerializer.serialize(body, "CreateShiftRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: CreateShiftResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "CreateShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: CreateShiftResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "CreateShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -236,29 +240,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: DeleteBreakTypeResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "DeleteBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: DeleteBreakTypeResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "DeleteBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -292,29 +298,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: DeleteShiftResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "DeleteShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: DeleteShiftResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "DeleteShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -348,29 +356,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: GetBreakTypeResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "GetBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: GetBreakTypeResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "GetBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -404,29 +414,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: GetEmployeeWageResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "GetEmployeeWageResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: GetEmployeeWageResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "GetEmployeeWageResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -460,29 +472,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: GetShiftResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "GetShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: GetShiftResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "GetShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -524,29 +538,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: ListBreakTypesResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ListBreakTypesResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: ListBreakTypesResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "ListBreakTypesResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -588,29 +604,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: ListEmployeeWagesResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ListEmployeeWagesResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: ListEmployeeWagesResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "ListEmployeeWagesResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -647,29 +665,31 @@ export class LaborApi {
             json: true,
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: ListWorkweekConfigsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "ListWorkweekConfigsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: ListWorkweekConfigsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "ListWorkweekConfigsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -703,29 +723,31 @@ export class LaborApi {
             body: ObjectSerializer.serialize(body, "SearchShiftsRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: SearchShiftsResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "SearchShiftsResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: SearchShiftsResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "SearchShiftsResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -766,29 +788,31 @@ export class LaborApi {
             body: ObjectSerializer.serialize(body, "UpdateBreakTypeRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: UpdateBreakTypeResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "UpdateBreakTypeResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: UpdateBreakTypeResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "UpdateBreakTypeResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -829,29 +853,31 @@ export class LaborApi {
             body: ObjectSerializer.serialize(body, "UpdateShiftRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: UpdateShiftResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "UpdateShiftResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: UpdateShiftResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "UpdateShiftResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
@@ -892,29 +918,31 @@ export class LaborApi {
             body: ObjectSerializer.serialize(body, "UpdateWorkweekConfigRequest")
         };
 
-        this.authentications.oauth2.applyToRequest(localVarRequestOptions);
+        let authenticationPromise = Promise.resolve();
+        authenticationPromise = authenticationPromise.then(() => this.authentications.oauth2.applyToRequest(localVarRequestOptions));
 
-        this.authentications.default.applyToRequest(localVarRequestOptions);
-
-        if (Object.keys(localVarFormParams).length) {
-            if (localVarUseFormData) {
-                (<any>localVarRequestOptions).formData = localVarFormParams;
-            } else {
-                localVarRequestOptions.form = localVarFormParams;
-            }
-        }
-        return new Promise<{ response: http.IncomingMessage; body: UpdateWorkweekConfigResponse;  }>((resolve, reject) => {
-            localVarRequest(localVarRequestOptions, (error, response, body) => {
-                if (error) {
-                    reject(error);
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+        return authenticationPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
                 } else {
-                    body = ObjectSerializer.deserialize(body, "UpdateWorkweekConfigResponse");
-                    if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
-                        resolve({ response: response, body: body });
-                    } else {
-                        reject({ response: response, body: body });
-                    }
+                    localVarRequestOptions.form = localVarFormParams;
                 }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: UpdateWorkweekConfigResponse;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "UpdateWorkweekConfigResponse");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject({ response: response, body: body });
+                        }
+                    }
+                });
             });
         });
     }
