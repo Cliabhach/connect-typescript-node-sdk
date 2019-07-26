@@ -15,14 +15,14 @@
 * Indicates the Square product used to generate an inventory change.
 */
 export enum Product {
-    SQUAREPOS = <any> 'SQUARE_POS',
-    EXTERNALAPI = <any> 'EXTERNAL_API',
+    SQUARE_POS = <any> 'SQUARE_POS',
+    EXTERNAL_API = <any> 'EXTERNAL_API',
     BILLING = <any> 'BILLING',
     APPOINTMENTS = <any> 'APPOINTMENTS',
     INVOICES = <any> 'INVOICES',
-    ONLINESTORE = <any> 'ONLINE_STORE',
+    ONLINE_STORE = <any> 'ONLINE_STORE',
     PAYROLL = <any> 'PAYROLL',
     DASHBOARD = <any> 'DASHBOARD',
-    ITEMLIBRARYIMPORT = <any> 'ITEM_LIBRARY_IMPORT',
+    ITEM_LIBRARY_IMPORT = <any> 'ITEM_LIBRARY_IMPORT',
     OTHER = <any> 'OTHER'
 }

@@ -15,7 +15,7 @@
 * Indicates the associated currency for an amount of money. Values correspond to [ISO 4217](https://wikipedia.org/wiki/ISO_4217).
 */
 export enum Currency {
-    UNKNOWNCURRENCY = <any> 'UNKNOWN_CURRENCY',
+    UNKNOWN_CURRENCY = <any> 'UNKNOWN_CURRENCY',
     AED = <any> 'AED',
     AFN = <any> 'AFN',
     ALL = <any> 'ALL',

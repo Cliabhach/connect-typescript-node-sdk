@@ -16,5 +16,5 @@
 */
 export enum InventoryAlertType {
     NONE = <any> 'NONE',
-    LOWQUANTITY = <any> 'LOW_QUANTITY'
+    LOW_QUANTITY = <any> 'LOW_QUANTITY'
 }

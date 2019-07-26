@@ -15,7 +15,7 @@
 * Indicates whether this is a line item or order level discount.
 */
 export enum OrderLineItemDiscountScope {
-    OTHERDISCOUNTSCOPE = <any> 'OTHER_DISCOUNT_SCOPE',
-    LINEITEM = <any> 'LINE_ITEM',
+    OTHER_DISCOUNT_SCOPE = <any> 'OTHER_DISCOUNT_SCOPE',
+    LINE_ITEM = <any> 'LINE_ITEM',
     ORDER = <any> 'ORDER'
 }

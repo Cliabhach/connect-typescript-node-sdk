@@ -15,7 +15,7 @@
 * 
 */
 export enum V1PageCellPlaceholderType {
-    ALLITEMS = <any> 'ALL_ITEMS',
-    DISCOUNTSCATEGORY = <any> 'DISCOUNTS_CATEGORY',
-    REWARDSFINDER = <any> 'REWARDS_FINDER'
+    ALL_ITEMS = <any> 'ALL_ITEMS',
+    DISCOUNTS_CATEGORY = <any> 'DISCOUNTS_CATEGORY',
+    REWARDS_FINDER = <any> 'REWARDS_FINDER'
 }

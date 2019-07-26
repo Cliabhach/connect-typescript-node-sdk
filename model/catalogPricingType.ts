@@ -15,6 +15,6 @@
 * Indicates whether the price of a [CatalogItemVariation](#type-catalogitemvariation) should be entered manually at the time of sale.
 */
 export enum CatalogPricingType {
-    FIXEDPRICING = <any> 'FIXED_PRICING',
-    VARIABLEPRICING = <any> 'VARIABLE_PRICING'
+    FIXED_PRICING = <any> 'FIXED_PRICING',
+    VARIABLE_PRICING = <any> 'VARIABLE_PRICING'
 }

@@ -15,12 +15,12 @@
 * Actions that resulted in a change to a timecard. All timecard events created with the Connect API have an event type that begins with `API`.
 */
 export enum V1TimecardEventEventType {
-    APICREATE = <any> 'API_CREATE',
-    APIEDIT = <any> 'API_EDIT',
-    APIDELETE = <any> 'API_DELETE',
-    REGISTERCLOCKIN = <any> 'REGISTER_CLOCKIN',
-    REGISTERCLOCKOUT = <any> 'REGISTER_CLOCKOUT',
-    DASHBOARDSUPERVISORCLOSE = <any> 'DASHBOARD_SUPERVISOR_CLOSE',
-    DASHBOARDEDIT = <any> 'DASHBOARD_EDIT',
-    DASHBOARDDELETE = <any> 'DASHBOARD_DELETE'
+    API_CREATE = <any> 'API_CREATE',
+    API_EDIT = <any> 'API_EDIT',
+    API_DELETE = <any> 'API_DELETE',
+    REGISTER_CLOCKIN = <any> 'REGISTER_CLOCKIN',
+    REGISTER_CLOCKOUT = <any> 'REGISTER_CLOCKOUT',
+    DASHBOARD_SUPERVISOR_CLOSE = <any> 'DASHBOARD_SUPERVISOR_CLOSE',
+    DASHBOARD_EDIT = <any> 'DASHBOARD_EDIT',
+    DASHBOARD_DELETE = <any> 'DASHBOARD_DELETE'
 }

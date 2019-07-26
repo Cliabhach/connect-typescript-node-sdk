@@ -15,8 +15,8 @@
 * How to apply a [CatalogDiscount](#type-catalogdiscount) to a [CatalogItem](#type-catalogitem).
 */
 export enum CatalogDiscountType {
-    FIXEDPERCENTAGE = <any> 'FIXED_PERCENTAGE',
-    FIXEDAMOUNT = <any> 'FIXED_AMOUNT',
-    VARIABLEPERCENTAGE = <any> 'VARIABLE_PERCENTAGE',
-    VARIABLEAMOUNT = <any> 'VARIABLE_AMOUNT'
+    FIXED_PERCENTAGE = <any> 'FIXED_PERCENTAGE',
+    FIXED_AMOUNT = <any> 'FIXED_AMOUNT',
+    VARIABLE_PERCENTAGE = <any> 'VARIABLE_PERCENTAGE',
+    VARIABLE_AMOUNT = <any> 'VARIABLE_AMOUNT'
 }

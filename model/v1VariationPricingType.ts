@@ -15,6 +15,6 @@
 * 
 */
 export enum V1VariationPricingType {
-    FIXEDPRICING = <any> 'FIXED_PRICING',
-    VARIABLEPRICING = <any> 'VARIABLE_PRICING'
+    FIXED_PRICING = <any> 'FIXED_PRICING',
+    VARIABLE_PRICING = <any> 'VARIABLE_PRICING'
 }

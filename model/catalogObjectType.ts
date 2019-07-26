@@ -18,12 +18,12 @@ export enum CatalogObjectType {
     ITEM = <any> 'ITEM',
     IMAGE = <any> 'IMAGE',
     CATEGORY = <any> 'CATEGORY',
-    ITEMVARIATION = <any> 'ITEM_VARIATION',
+    ITEM_VARIATION = <any> 'ITEM_VARIATION',
     TAX = <any> 'TAX',
     DISCOUNT = <any> 'DISCOUNT',
-    MODIFIERLIST = <any> 'MODIFIER_LIST',
+    MODIFIER_LIST = <any> 'MODIFIER_LIST',
     MODIFIER = <any> 'MODIFIER',
-    PRICINGRULE = <any> 'PRICING_RULE',
-    PRODUCTSET = <any> 'PRODUCT_SET',
-    TIMEPERIOD = <any> 'TIME_PERIOD'
+    PRICING_RULE = <any> 'PRICING_RULE',
+    PRODUCT_SET = <any> 'PRODUCT_SET',
+    TIME_PERIOD = <any> 'TIME_PERIOD'
 }

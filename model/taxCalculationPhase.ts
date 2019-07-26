@@ -15,6 +15,6 @@
 * When to calculate the taxes due on a cart.
 */
 export enum TaxCalculationPhase {
-    SUBTOTALPHASE = <any> 'TAX_SUBTOTAL_PHASE',
-    TOTALPHASE = <any> 'TAX_TOTAL_PHASE'
+    SUBTOTAL_PHASE = <any> 'TAX_SUBTOTAL_PHASE',
+    TOTAL_PHASE = <any> 'TAX_TOTAL_PHASE'
 }

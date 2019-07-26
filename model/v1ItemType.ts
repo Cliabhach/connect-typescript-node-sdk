@@ -16,6 +16,6 @@
 */
 export enum V1ItemType {
     NORMAL = <any> 'NORMAL',
-    GIFTCARD = <any> 'GIFT_CARD',
+    GIFT_CARD = <any> 'GIFT_CARD',
     OTHER = <any> 'OTHER'
 }

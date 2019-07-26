@@ -15,13 +15,13 @@
 * The brand of a credit card.
 */
 export enum V1TenderCardBrand {
-    OTHERBRAND = <any> 'OTHER_BRAND',
+    OTHER_BRAND = <any> 'OTHER_BRAND',
     VISA = <any> 'VISA',
-    MASTERCARD = <any> 'MASTER_CARD',
-    AMERICANEXPRESS = <any> 'AMERICAN_EXPRESS',
+    MASTER_CARD = <any> 'MASTER_CARD',
+    AMERICAN_EXPRESS = <any> 'AMERICAN_EXPRESS',
     DISCOVER = <any> 'DISCOVER',
-    DISCOVERDINERS = <any> 'DISCOVER_DINERS',
+    DISCOVER_DINERS = <any> 'DISCOVER_DINERS',
     JCB = <any> 'JCB',
-    CHINAUNIONPAY = <any> 'CHINA_UNIONPAY',
-    SQUAREGIFTCARD = <any> 'SQUARE_GIFT_CARD'
+    CHINA_UNIONPAY = <any> 'CHINA_UNIONPAY',
+    SQUARE_GIFT_CARD = <any> 'SQUARE_GIFT_CARD'
 }

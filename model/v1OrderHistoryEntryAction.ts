@@ -15,9 +15,9 @@
 * 
 */
 export enum V1OrderHistoryEntryAction {
-    ORDERPLACED = <any> 'ORDER_PLACED',
+    ORDER_PLACED = <any> 'ORDER_PLACED',
     DECLINED = <any> 'DECLINED',
-    PAYMENTRECEIVED = <any> 'PAYMENT_RECEIVED',
+    PAYMENT_RECEIVED = <any> 'PAYMENT_RECEIVED',
     CANCELED = <any> 'CANCELED',
     COMPLETED = <any> 'COMPLETED',
     REFUNDED = <any> 'REFUNDED',

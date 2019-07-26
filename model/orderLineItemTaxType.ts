@@ -15,7 +15,7 @@
 * Indicates how the tax is applied to the associated line item or order.
 */
 export enum OrderLineItemTaxType {
-    UNKNOWNTAX = <any> 'UNKNOWN_TAX',
+    UNKNOWN_TAX = <any> 'UNKNOWN_TAX',
     ADDITIVE = <any> 'ADDITIVE',
     INCLUSIVE = <any> 'INCLUSIVE'
 }

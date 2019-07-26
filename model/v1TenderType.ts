@@ -15,12 +15,12 @@
 * 
 */
 export enum V1TenderType {
-    CREDITCARD = <any> 'CREDIT_CARD',
+    CREDIT_CARD = <any> 'CREDIT_CARD',
     CASH = <any> 'CASH',
-    THIRDPARTYCARD = <any> 'THIRD_PARTY_CARD',
-    NOSALE = <any> 'NO_SALE',
-    SQUAREWALLET = <any> 'SQUARE_WALLET',
-    SQUAREGIFTCARD = <any> 'SQUARE_GIFT_CARD',
+    THIRD_PARTY_CARD = <any> 'THIRD_PARTY_CARD',
+    NO_SALE = <any> 'NO_SALE',
+    SQUARE_WALLET = <any> 'SQUARE_WALLET',
+    SQUARE_GIFT_CARD = <any> 'SQUARE_GIFT_CARD',
     UNKNOWN = <any> 'UNKNOWN',
     OTHER = <any> 'OTHER'
 }

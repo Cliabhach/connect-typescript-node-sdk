@@ -17,9 +17,9 @@
 export enum V1TenderEntryMethod {
     MANUAL = <any> 'MANUAL',
     SCANNED = <any> 'SCANNED',
-    SQUARECASH = <any> 'SQUARE_CASH',
-    SQUAREWALLET = <any> 'SQUARE_WALLET',
+    SQUARE_CASH = <any> 'SQUARE_CASH',
+    SQUARE_WALLET = <any> 'SQUARE_WALLET',
     SWIPED = <any> 'SWIPED',
-    WEBFORM = <any> 'WEB_FORM',
+    WEB_FORM = <any> 'WEB_FORM',
     OTHER = <any> 'OTHER'
 }

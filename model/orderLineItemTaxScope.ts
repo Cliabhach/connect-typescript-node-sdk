@@ -15,7 +15,7 @@
 * Indicates whether this is a line item or order level tax.
 */
 export enum OrderLineItemTaxScope {
-    OTHERTAXSCOPE = <any> 'OTHER_TAX_SCOPE',
-    LINEITEM = <any> 'LINE_ITEM',
+    OTHER_TAX_SCOPE = <any> 'OTHER_TAX_SCOPE',
+    LINE_ITEM = <any> 'LINE_ITEM',
     ORDER = <any> 'ORDER'
 }

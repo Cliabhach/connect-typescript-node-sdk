@@ -15,8 +15,8 @@
 * Enumerates the `Shift` fields to sort on.
 */
 export enum ShiftSortField {
-    STARTAT = <any> 'START_AT',
-    ENDAT = <any> 'END_AT',
-    CREATEDAT = <any> 'CREATED_AT',
-    UPDATEDAT = <any> 'UPDATED_AT'
+    START_AT = <any> 'START_AT',
+    END_AT = <any> 'END_AT',
+    CREATED_AT = <any> 'CREATED_AT',
+    UPDATED_AT = <any> 'UPDATED_AT'
 }

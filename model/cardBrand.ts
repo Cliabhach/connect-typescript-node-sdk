@@ -15,13 +15,13 @@
 * Indicates a card\'s brand, such as `VISA` or `MASTERCARD`.
 */
 export enum CardBrand {
-    OTHERBRAND = <any> 'OTHER_BRAND',
+    OTHER_BRAND = <any> 'OTHER_BRAND',
     VISA = <any> 'VISA',
     MASTERCARD = <any> 'MASTERCARD',
-    AMERICANEXPRESS = <any> 'AMERICAN_EXPRESS',
+    AMERICAN_EXPRESS = <any> 'AMERICAN_EXPRESS',
     DISCOVER = <any> 'DISCOVER',
-    DISCOVERDINERS = <any> 'DISCOVER_DINERS',
+    DISCOVER_DINERS = <any> 'DISCOVER_DINERS',
     JCB = <any> 'JCB',
-    CHINAUNIONPAY = <any> 'CHINA_UNIONPAY',
-    SQUAREGIFTCARD = <any> 'SQUARE_GIFT_CARD'
+    CHINA_UNIONPAY = <any> 'CHINA_UNIONPAY',
+    SQUARE_GIFT_CARD = <any> 'SQUARE_GIFT_CARD'
 }

@@ -15,6 +15,6 @@
 * Represents a phase in the process of calculating order totals. Service charges will be applied after the phase indicated.  [Read more about how order totals are calculated.](/orders-api/how-it-works#how-totals-are-calculated)
 */
 export enum OrderServiceChargeCalculationPhase {
-    SUBTOTALPHASE = <any> 'SUBTOTAL_PHASE',
-    TOTALPHASE = <any> 'TOTAL_PHASE'
+    SUBTOTAL_PHASE = <any> 'SUBTOTAL_PHASE',
+    TOTAL_PHASE = <any> 'TOTAL_PHASE'
 }

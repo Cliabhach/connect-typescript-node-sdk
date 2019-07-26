@@ -15,10 +15,10 @@
 * Indicates which high-level category of error has occurred during a request to the Connect API.
 */
 export enum ErrorCategory {
-    APIERROR = <any> 'API_ERROR',
-    AUTHENTICATIONERROR = <any> 'AUTHENTICATION_ERROR',
-    INVALIDREQUESTERROR = <any> 'INVALID_REQUEST_ERROR',
-    RATELIMITERROR = <any> 'RATE_LIMIT_ERROR',
-    PAYMENTMETHODERROR = <any> 'PAYMENT_METHOD_ERROR',
-    REFUNDERROR = <any> 'REFUND_ERROR'
+    API_ERROR = <any> 'API_ERROR',
+    AUTHENTICATION_ERROR = <any> 'AUTHENTICATION_ERROR',
+    INVALID_REQUEST_ERROR = <any> 'INVALID_REQUEST_ERROR',
+    RATE_LIMIT_ERROR = <any> 'RATE_LIMIT_ERROR',
+    PAYMENT_METHOD_ERROR = <any> 'PAYMENT_METHOD_ERROR',
+    REFUND_ERROR = <any> 'REFUND_ERROR'
 }

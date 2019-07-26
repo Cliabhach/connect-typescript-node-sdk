@@ -15,7 +15,7 @@
 * 
 */
 export enum V1FeeCalculationPhase {
-    FEESUBTOTALPHASE = <any> 'FEE_SUBTOTAL_PHASE',
+    FEE_SUBTOTAL_PHASE = <any> 'FEE_SUBTOTAL_PHASE',
     OTHER = <any> 'OTHER',
-    FEETOTALPHASE = <any> 'FEE_TOTAL_PHASE'
+    FEE_TOTAL_PHASE = <any> 'FEE_TOTAL_PHASE'
 }

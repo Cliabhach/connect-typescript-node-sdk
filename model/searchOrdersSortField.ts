@@ -15,7 +15,7 @@
 * Specifies which timestamp to use to sort SearchOrder results.
 */
 export enum SearchOrdersSortField {
-    CREATEDAT = <any> 'CREATED_AT',
-    UPDATEDAT = <any> 'UPDATED_AT',
-    CLOSEDAT = <any> 'CLOSED_AT'
+    CREATED_AT = <any> 'CREATED_AT',
+    UPDATED_AT = <any> 'UPDATED_AT',
+    CLOSED_AT = <any> 'CLOSED_AT'
 }

@@ -16,6 +16,6 @@
 */
 export enum V1PaymentSurchargeType {
     UNKNOWN = <any> 'UNKNOWN',
-    AUTOGRATUITY = <any> 'AUTO_GRATUITY',
+    AUTO_GRATUITY = <any> 'AUTO_GRATUITY',
     CUSTOM = <any> 'CUSTOM'
 }

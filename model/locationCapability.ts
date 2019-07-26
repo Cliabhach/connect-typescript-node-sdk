@@ -15,5 +15,5 @@
 * Indicates payment capabilities that a business\'s location might or might not have enabled.
 */
 export enum LocationCapability {
-    CREDITCARDPROCESSING = <any> 'CREDIT_CARD_PROCESSING'
+    CREDIT_CARD_PROCESSING = <any> 'CREDIT_CARD_PROCESSING'
 }

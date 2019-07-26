@@ -15,7 +15,7 @@
 * 
 */
 export enum V1BankAccountType {
-    BUSINESSCHECKING = <any> 'BUSINESS_CHECKING',
+    BUSINESS_CHECKING = <any> 'BUSINESS_CHECKING',
     CHECKING = <any> 'CHECKING',
     INVESTMENT = <any> 'INVESTMENT',
     LOAN = <any> 'LOAN',

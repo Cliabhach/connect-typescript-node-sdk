@@ -16,6 +16,6 @@
 */
 export enum V1AdjustInventoryRequestAdjustmentType {
     SALE = <any> 'SALE',
-    RECEIVESTOCK = <any> 'RECEIVE_STOCK',
-    MANUALADJUST = <any> 'MANUAL_ADJUST'
+    RECEIVE_STOCK = <any> 'RECEIVE_STOCK',
+    MANUAL_ADJUST = <any> 'MANUAL_ADJUST'
 }

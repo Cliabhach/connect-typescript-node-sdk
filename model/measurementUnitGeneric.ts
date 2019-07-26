@@ -15,6 +15,6 @@
 * A custom unit of measurement defined by the user.
 */
 export enum MeasurementUnitGeneric {
-    INVALIDGENERICUNIT = <any> 'INVALID_GENERIC_UNIT',
+    INVALID_GENERIC_UNIT = <any> 'INVALID_GENERIC_UNIT',
     UNIT = <any> 'UNIT'
 }

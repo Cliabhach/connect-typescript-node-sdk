@@ -17,8 +17,8 @@
 export enum TenderType {
     CARD = <any> 'CARD',
     CASH = <any> 'CASH',
-    THIRDPARTYCARD = <any> 'THIRD_PARTY_CARD',
-    SQUAREGIFTCARD = <any> 'SQUARE_GIFT_CARD',
-    NOSALE = <any> 'NO_SALE',
+    THIRD_PARTY_CARD = <any> 'THIRD_PARTY_CARD',
+    SQUARE_GIFT_CARD = <any> 'SQUARE_GIFT_CARD',
+    NO_SALE = <any> 'NO_SALE',
     OTHER = <any> 'OTHER'
 }

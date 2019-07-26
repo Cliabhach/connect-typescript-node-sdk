@@ -15,7 +15,7 @@
 * Defines the logic used to apply a workday filter.
 */
 export enum ShiftWorkdayMatcher {
-    STARTAT = <any> 'START_AT',
-    ENDAT = <any> 'END_AT',
+    START_AT = <any> 'START_AT',
+    END_AT = <any> 'END_AT',
     INTERSECTION = <any> 'INTERSECTION'
 }

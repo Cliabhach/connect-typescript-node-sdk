@@ -15,9 +15,9 @@
 * Indicates how the discount is applied to the associated line item or order.
 */
 export enum OrderLineItemDiscountType {
-    UNKNOWNDISCOUNT = <any> 'UNKNOWN_DISCOUNT',
-    FIXEDPERCENTAGE = <any> 'FIXED_PERCENTAGE',
-    FIXEDAMOUNT = <any> 'FIXED_AMOUNT',
-    VARIABLEPERCENTAGE = <any> 'VARIABLE_PERCENTAGE',
-    VARIABLEAMOUNT = <any> 'VARIABLE_AMOUNT'
+    UNKNOWN_DISCOUNT = <any> 'UNKNOWN_DISCOUNT',
+    FIXED_PERCENTAGE = <any> 'FIXED_PERCENTAGE',
+    FIXED_AMOUNT = <any> 'FIXED_AMOUNT',
+    VARIABLE_PERCENTAGE = <any> 'VARIABLE_PERCENTAGE',
+    VARIABLE_AMOUNT = <any> 'VARIABLE_AMOUNT'
 }

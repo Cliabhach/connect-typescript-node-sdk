@@ -15,12 +15,12 @@
 * 
 */
 export enum V1FeeType {
-    CAGST = <any> 'CA_GST',
-    CAHST = <any> 'CA_HST',
-    CAPST = <any> 'CA_PST',
-    CAQST = <any> 'CA_QST',
-    JPCONSUMPTIONTAX = <any> 'JP_CONSUMPTION_TAX',
-    CAPEIPST = <any> 'CA_PEI_PST',
-    USSALESTAX = <any> 'US_SALES_TAX',
+    CA_GST = <any> 'CA_GST',
+    CA_HST = <any> 'CA_HST',
+    CA_PST = <any> 'CA_PST',
+    CA_QST = <any> 'CA_QST',
+    JP_CONSUMPTION_TAX = <any> 'JP_CONSUMPTION_TAX',
+    CA_PEI_PST = <any> 'CA_PEI_PST',
+    US_SALES_TAX = <any> 'US_SALES_TAX',
     OTHER = <any> 'OTHER'
 }

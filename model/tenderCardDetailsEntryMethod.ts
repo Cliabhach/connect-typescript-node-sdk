@@ -18,6 +18,6 @@ export enum TenderCardDetailsEntryMethod {
     SWIPED = <any> 'SWIPED',
     KEYED = <any> 'KEYED',
     EMV = <any> 'EMV',
-    ONFILE = <any> 'ON_FILE',
+    ON_FILE = <any> 'ON_FILE',
     CONTACTLESS = <any> 'CONTACTLESS'
 }

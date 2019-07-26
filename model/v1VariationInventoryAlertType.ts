@@ -15,7 +15,7 @@
 * 
 */
 export enum V1VariationInventoryAlertType {
-    LOWQUANTITY = <any> 'LOW_QUANTITY',
+    LOW_QUANTITY = <any> 'LOW_QUANTITY',
     NONE = <any> 'NONE',
     INVESTMENT = <any> 'INVESTMENT',
     LOAN = <any> 'LOAN',

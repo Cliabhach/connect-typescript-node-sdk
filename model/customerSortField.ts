@@ -16,5 +16,5 @@
 */
 export enum CustomerSortField {
     DEFAULT = <any> 'DEFAULT',
-    CREATEDAT = <any> 'CREATED_AT'
+    CREATED_AT = <any> 'CREATED_AT'
 }

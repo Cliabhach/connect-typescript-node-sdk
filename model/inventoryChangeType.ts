@@ -15,7 +15,7 @@
 * Indicates how the inventory change was applied to a tracked quantity of items.
 */
 export enum InventoryChangeType {
-    PHYSICALCOUNT = <any> 'PHYSICAL_COUNT',
+    PHYSICAL_COUNT = <any> 'PHYSICAL_COUNT',
     ADJUSTMENT = <any> 'ADJUSTMENT',
     TRANSFER = <any> 'TRANSFER'
 }

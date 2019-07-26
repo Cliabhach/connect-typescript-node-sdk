@@ -16,11 +16,11 @@
 */
 export enum TransactionProduct {
     REGISTER = <any> 'REGISTER',
-    EXTERNALAPI = <any> 'EXTERNAL_API',
+    EXTERNAL_API = <any> 'EXTERNAL_API',
     BILLING = <any> 'BILLING',
     APPOINTMENTS = <any> 'APPOINTMENTS',
     INVOICES = <any> 'INVOICES',
-    ONLINESTORE = <any> 'ONLINE_STORE',
+    ONLINE_STORE = <any> 'ONLINE_STORE',
     PAYROLL = <any> 'PAYROLL',
     OTHER = <any> 'OTHER'
 }
