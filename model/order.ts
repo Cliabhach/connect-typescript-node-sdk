@@ -76,6 +76,10 @@ export class Order {
     */
     'tenders'?: Array<Tender>;
     /**
+    * Whether the Tenders have been processed fully.
+    */
+    'tendersFinalized'?: boolean;
+    /**
     * The Refunds that are part of this Order. This field is read-only.
     */
     'refunds'?: Array<Refund>;
@@ -177,6 +181,11 @@ export class Order {
             "name": "tenders",
             "baseName": "tenders",
             "type": "Array<Tender>"
+        },
+        {
+            "name": "tendersFinalized",
+            "baseName": "tenders_finalized",
+            "type": "boolean"
         },
         {
             "name": "refunds",

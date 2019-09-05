@@ -83,6 +83,11 @@ Order.attributeTypeMap = [
         "type": "Array<Tender>"
     },
     {
+        "name": "tendersFinalized",
+        "baseName": "tenders_finalized",
+        "type": "boolean"
+    },
+    {
         "name": "refunds",
         "baseName": "refunds",
         "type": "Array<Refund>"

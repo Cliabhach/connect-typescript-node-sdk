@@ -1,6 +1,6 @@
 {
     "name": "square-connect-ts",
-    "version": "2.20190710.1",
+    "version": "2.20190710.2",
     "description": "Unofficial TypeScript client for Square Connect API",
     "repository": "Cliabhach/connect-typescript-node-sdk",
     "private": true,

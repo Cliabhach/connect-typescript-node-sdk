@@ -26,6 +26,7 @@ export declare class Order {
     'netAmounts'?: OrderMoneyAmounts;
     'roundingAdjustment'?: OrderRoundingAdjustment;
     'tenders'?: Array<Tender>;
+    'tendersFinalized'?: boolean;
     'refunds'?: Array<Refund>;
     'createdAt'?: string;
     'updatedAt'?: string;
